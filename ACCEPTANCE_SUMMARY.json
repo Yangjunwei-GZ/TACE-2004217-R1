@@ -1,0 +1,59 @@
+{
+  "local_version": "local-input-route-fix-20261022-r2",
+  "scope": "Package verification; no scientific model refit",
+  "unit_and_synthetic_tests": {
+    "tests": 47,
+    "failures": 0,
+    "errors": 0,
+    "runtime": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "different_cwd_and_space_paths": true
+  },
+  "real_matrix_route": "Input identity/materialisation only; no training",
+  "real_raw_route": {
+    "features_reextracted": true,
+    "comparison": {
+      "status": "PASS",
+      "route": "raw",
+      "comparisons": {
+        "features": {
+          "rows": 202,
+          "columns": 116,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "atol": 1e-08,
+          "rtol": 1e-10,
+          "row_order_and_IDs_identical": true,
+          "ignored_relocated_columns": [
+            "ct_path",
+            "mask_path"
+          ]
+        },
+        "matrix": {
+          "rows": 118,
+          "columns": 182,
+          "max_absolute_error": 0.0,
+          "max_relative_error": 0.0,
+          "atol": 1e-08,
+          "rtol": 1e-10,
+          "row_order_and_IDs_identical": true,
+          "ignored_relocated_columns": [
+            "ct_path",
+            "mask_path"
+          ]
+        }
+      },
+      "new_model_fits": 0,
+      "features_reextracted": true
+    },
+    "execution_candidate": "attempt_01; identical extraction/development algorithms and scientific inputs to this candidate; final candidate changes only two descriptive provenance paths, release seal, report metadata helper and documentation. Final candidate is independently source-preflighted and its references compared with the actual re-extracted outputs.",
+    "new_scientific_model_fits": 0
+  },
+  "full_real_training_this_round": false,
+  "original_510_checkpoints": "Retained unchanged in separate full local archive; identities only in this candidate",
+  "submission_portal_verified": false,
+  "historical_candidate_published_at_acceptance": false,
+  "scope_date": "2026-10-22, before GitHub publication",
+  "release_tag": "v1.0.0",
+  "publication_status_note": "This is historical input/software acceptance, not an assertion that this release remains unpublished. See the fixed GitHub release and the external anonymous-access record."
+}

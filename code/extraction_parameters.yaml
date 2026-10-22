@@ -1,0 +1,32 @@
+imageType:
+  Original: {}
+featureClass:
+  firstorder: []
+  shape: []
+  glcm: []
+  glrlm: []
+  glszm: []
+  gldm: []
+  ngtdm: []
+setting:
+  minimumROIDimensions: 2
+  minimumROISize: null
+  normalize: false
+  normalizeScale: 1
+  removeOutliers: null
+  resampledPixelSpacing: [1, 1, 1]
+  interpolator: "sitkBSpline"
+  preCrop: false
+  padDistance: 5
+  distances: [1]
+  force2D: false
+  force2Ddimension: 0
+  resegmentRange: null
+  label: 1
+  additionalInfo: true
+  binWidth: 25
+  voxelArrayShift: 0
+  correctMask: false
+  geometryTolerance: null
+# Mask interpolation: nearest neighbour in physical coordinates.
+# SimpleITK coordinate and direction tolerances: 1e-6, not overridden.

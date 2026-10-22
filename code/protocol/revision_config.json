@@ -1,0 +1,12 @@
+{
+  "revision_date": "2026-10-14", "primary_phase": 1, "geometry_numeric_tolerance": 0.0001,
+  "features_original": 107, "correlation_threshold": 0.85, "max_filtered_features": 12,
+  "inner_folds": 3, "outer_folds": 5, "point_repeats": 10, "bootstrap_replicates": 500,
+  "seed_point": 20261014, "seed_bootstrap": 20261015, "baseline_penalizer": 0.1,
+  "candidates": ["ridge", "top_two_cox", "top_two_elastic_net"],
+  "ridge_penalties": [0.1, 1.0, 10.0], "two_feature_penalties": [0.01, 0.1, 1.0],
+  "primary_comparison": ["clinical_diameter_mean_hu", "clinical_diameter_mean_hu_radiomics"],
+  "prediction_months": [12,24,36], "ibs_monthly_grid": [1,36],
+  "independent_radiologist_review_required": true, "public_code_required": true,
+  "no_hr_eligibility_rule": true, "no_dca": true
+}

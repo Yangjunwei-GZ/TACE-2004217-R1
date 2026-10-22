@@ -1,0 +1,57 @@
+{
+  "python": "3.10.11",
+  "radiomics_module": "0+unknown",
+  "distribution": {
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "SimpleITK": "2.3.1",
+    "pyradiomics-fix": "3.0.1.dev4",
+    "scikit-survival": "0.23.1",
+    "scikit-learn": "1.5.2",
+    "scipy": "1.14.1"
+  },
+  "settings": {
+    "minimumROIDimensions": 2,
+    "minimumROISize": null,
+    "normalize": false,
+    "normalizeScale": 1,
+    "removeOutliers": null,
+    "resampledPixelSpacing": [
+      1,
+      1,
+      1
+    ],
+    "interpolator": "sitkBSpline",
+    "preCrop": false,
+    "padDistance": 5,
+    "distances": [
+      1
+    ],
+    "force2D": false,
+    "force2Ddimension": 0,
+    "resegmentRange": null,
+    "label": 1,
+    "additionalInfo": true,
+    "binWidth": 25
+  },
+  "imageType": {
+    "Original": {}
+  },
+  "featureClass": {
+    "firstorder": [],
+    "shape": [],
+    "glcm": [],
+    "glrlm": [],
+    "glszm": [],
+    "gldm": [],
+    "ngtdm": []
+  },
+  "mask_interpolation": "sitkNearestNeighbor used by PyRadiomics resampleImage",
+  "geometryTolerance": "not overridden; SimpleITK defaults",
+  "correctMask": false,
+  "source_mask_modification": "positive labels binarised in memory only",
+  "SimpleITK_coordinate_tolerance": 1e-06,
+  "SimpleITK_direction_tolerance": 1e-06,
+  "voxelArrayShift": 0,
+  "voxelArrayShift_evidence": "RadiomicsFirstOrder.__init__: kwargs.get(voxelArrayShift, 0), inspected in installed 3.0.1 module"
+}

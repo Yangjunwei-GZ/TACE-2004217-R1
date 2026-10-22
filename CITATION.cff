@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "Please cite this fixed software release and the WAW-TACE source data separately."
+type: software
+title: "TACE manuscript 2004217 reproducibility code and reviewed derived inputs"
+version: "v1.0.0"
+date-released: "2026-10-22"
+authors:
+  - family-names: Yang
+    given-names: Junwei
+repository-code: "https://github.com/Yangjunwei-GZ/TACE-2004217-R1"
+url: "https://github.com/Yangjunwei-GZ/TACE-2004217-R1/releases/tag/v1.0.0"
+license: MIT
+abstract: "Code licence only: derived source data and third-party software retain their separate licences. Reproduction of the 118-patient, 83-event, 202-ROI analysis; added predictive value was not established."

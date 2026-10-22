@@ -1,0 +1,610 @@
+[
+  {
+    "file": "8_1_scan.nii.gz.0056.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0061.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0094.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0106.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0055.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0053.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0002.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0005.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0030.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0029.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0062.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0027.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0052.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0006.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0088.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0058.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0099.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0057.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0001.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0087.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0090.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0084.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0086.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0025.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0105.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0049.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0037.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0048.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0054.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0089.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0082.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0100.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0081.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0013.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0091.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0080.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0093.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0079.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0050.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0020.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0000.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0076.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0075.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0047.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0098.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0044.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0085.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0051.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0074.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0015.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0023.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0067.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0042.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0071.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0041.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0083.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0045.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0070.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0077.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0069.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0068.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0012.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0011.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0017.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0043.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0026.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0031.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0064.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0008.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0072.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0009.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0063.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0060.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0104.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0065.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0103.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0036.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0102.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0101.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0018.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0007.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0014.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0078.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0010.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0059.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0073.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0092.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0097.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0032.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0096.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0003.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0004.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0095.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0066.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0110.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0115.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0112.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0116.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0107.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0111.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0108.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0113.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0118.part",
+    "status": "resumed_complete",
+    "bytes": 82955
+  },
+  {
+    "file": "8_1_scan.nii.gz.0109.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0117.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0114.part",
+    "status": "resumed_complete",
+    "bytes": 524288
+  },
+  {
+    "file": "8_1_scan.nii.gz.0021.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0035.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0019.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0024.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0028.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0039.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0040.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0033.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0038.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0022.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0016.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0046.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  },
+  {
+    "file": "8_1_scan.nii.gz.0034.part",
+    "status": "complete",
+    "bytes": 524288,
+    "error": ""
+  }
+]

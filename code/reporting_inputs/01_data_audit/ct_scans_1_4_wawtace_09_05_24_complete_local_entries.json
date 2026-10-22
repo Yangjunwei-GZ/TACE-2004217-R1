@@ -1,0 +1,682 @@
+[
+  {
+    "name": "10/",
+    "offset": 33,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "10/10_0_scan.nii.gz",
+    "offset": 82,
+    "size": 20986598,
+    "uncompressed": 20986598,
+    "crc": 3070368522,
+    "method": 0
+  },
+  {
+    "name": "10/10_1_scan.nii.gz",
+    "offset": 20986729,
+    "size": 44251540,
+    "uncompressed": 44251540,
+    "crc": 2004090308,
+    "method": 0
+  },
+  {
+    "name": "10/10_2_scan.nii.gz",
+    "offset": 65238318,
+    "size": 45673588,
+    "uncompressed": 45673588,
+    "crc": 3820960389,
+    "method": 0
+  },
+  {
+    "name": "10/10_3_scan.nii.gz",
+    "offset": 110911955,
+    "size": 22040275,
+    "uncompressed": 22040275,
+    "crc": 527310716,
+    "method": 0
+  },
+  {
+    "name": "13/",
+    "offset": 132952263,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "13/13_0_scan.nii.gz",
+    "offset": 132952312,
+    "size": 16218482,
+    "uncompressed": 16218482,
+    "crc": 1124160527,
+    "method": 0
+  },
+  {
+    "name": "13/13_1_scan.nii.gz",
+    "offset": 149170843,
+    "size": 41335734,
+    "uncompressed": 41335734,
+    "crc": 1943710308,
+    "method": 0
+  },
+  {
+    "name": "13/13_2_scan.nii.gz",
+    "offset": 190506626,
+    "size": 41477356,
+    "uncompressed": 41477356,
+    "crc": 1114091117,
+    "method": 0
+  },
+  {
+    "name": "13/13_3_scan.nii.gz",
+    "offset": 231984031,
+    "size": 33124597,
+    "uncompressed": 33124597,
+    "crc": 2414067354,
+    "method": 0
+  },
+  {
+    "name": "14/",
+    "offset": 265108661,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "14/14_0_scan.nii.gz",
+    "offset": 265108710,
+    "size": 22507732,
+    "uncompressed": 22507732,
+    "crc": 2288131239,
+    "method": 0
+  },
+  {
+    "name": "14/14_1_scan.nii.gz",
+    "offset": 287616491,
+    "size": 47015345,
+    "uncompressed": 47015345,
+    "crc": 588786354,
+    "method": 0
+  },
+  {
+    "name": "14/14_2_scan.nii.gz",
+    "offset": 334631885,
+    "size": 43191215,
+    "uncompressed": 43191215,
+    "crc": 2188057625,
+    "method": 0
+  },
+  {
+    "name": "15/",
+    "offset": 377823133,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "15/15_0_scan.nii.gz",
+    "offset": 377823182,
+    "size": 22379507,
+    "uncompressed": 22379507,
+    "crc": 3735782578,
+    "method": 0
+  },
+  {
+    "name": "15/15_1_scan.nii.gz",
+    "offset": 400202738,
+    "size": 46496397,
+    "uncompressed": 46496397,
+    "crc": 3708727404,
+    "method": 0
+  },
+  {
+    "name": "15/15_2_scan.nii.gz",
+    "offset": 446699184,
+    "size": 46704112,
+    "uncompressed": 46704112,
+    "crc": 1001433728,
+    "method": 0
+  },
+  {
+    "name": "15/15_3_scan.nii.gz",
+    "offset": 493403345,
+    "size": 46158124,
+    "uncompressed": 46158124,
+    "crc": 2455456215,
+    "method": 0
+  },
+  {
+    "name": "16/",
+    "offset": 539561502,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "16/16_0_scan.nii.gz",
+    "offset": 539561551,
+    "size": 88045824,
+    "uncompressed": 88045824,
+    "crc": 2453925116,
+    "method": 0
+  },
+  {
+    "name": "16/16_1_scan.nii.gz",
+    "offset": 627607424,
+    "size": 89002715,
+    "uncompressed": 89002715,
+    "crc": 624168471,
+    "method": 0
+  },
+  {
+    "name": "16/16_2_scan.nii.gz",
+    "offset": 716610188,
+    "size": 89257499,
+    "uncompressed": 89257499,
+    "crc": 1292940987,
+    "method": 0
+  },
+  {
+    "name": "18/",
+    "offset": 805867720,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "18/18_0_scan.nii.gz",
+    "offset": 805867769,
+    "size": 29212710,
+    "uncompressed": 29212710,
+    "crc": 3206659405,
+    "method": 0
+  },
+  {
+    "name": "18/18_1_scan.nii.gz",
+    "offset": 835080528,
+    "size": 61172966,
+    "uncompressed": 61172966,
+    "crc": 3520324767,
+    "method": 0
+  },
+  {
+    "name": "18/18_2_scan.nii.gz",
+    "offset": 896253543,
+    "size": 48258218,
+    "uncompressed": 48258218,
+    "crc": 3780387070,
+    "method": 0
+  },
+  {
+    "name": "18/18_3_scan.nii.gz",
+    "offset": 944511810,
+    "size": 30147088,
+    "uncompressed": 30147088,
+    "crc": 2479205597,
+    "method": 0
+  },
+  {
+    "name": "19/",
+    "offset": 974658931,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "19/19_0_scan.nii.gz",
+    "offset": 974658980,
+    "size": 24892191,
+    "uncompressed": 24892191,
+    "crc": 2409198673,
+    "method": 0
+  },
+  {
+    "name": "19/19_1_scan.nii.gz",
+    "offset": 999551220,
+    "size": 76884165,
+    "uncompressed": 76884165,
+    "crc": 2531308494,
+    "method": 0
+  },
+  {
+    "name": "19/19_2_scan.nii.gz",
+    "offset": 1076435434,
+    "size": 77174340,
+    "uncompressed": 77174340,
+    "crc": 1891373411,
+    "method": 0
+  },
+  {
+    "name": "19/19_3_scan.nii.gz",
+    "offset": 1153609823,
+    "size": 78229734,
+    "uncompressed": 78229734,
+    "crc": 3938107537,
+    "method": 0
+  },
+  {
+    "name": "2/",
+    "offset": 1231839589,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "2/2_0_scan.nii.gz",
+    "offset": 1231839636,
+    "size": 20546896,
+    "uncompressed": 20546896,
+    "crc": 3309574616,
+    "method": 0
+  },
+  {
+    "name": "2/2_1_scan.nii.gz",
+    "offset": 1252386579,
+    "size": 55747543,
+    "uncompressed": 55747543,
+    "crc": 3207442037,
+    "method": 0
+  },
+  {
+    "name": "2/2_2_scan.nii.gz",
+    "offset": 1308134169,
+    "size": 42840100,
+    "uncompressed": 42840100,
+    "crc": 2658411484,
+    "method": 0
+  },
+  {
+    "name": "2/2_3_scan.nii.gz",
+    "offset": 1350974316,
+    "size": 27503911,
+    "uncompressed": 27503911,
+    "crc": 264209981,
+    "method": 0
+  },
+  {
+    "name": "20/",
+    "offset": 1378478260,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "20/20_0_scan.nii.gz",
+    "offset": 1378478309,
+    "size": 186207968,
+    "uncompressed": 186207968,
+    "crc": 1838156567,
+    "method": 0
+  },
+  {
+    "name": "20/20_1_scan.nii.gz",
+    "offset": 1564686326,
+    "size": 99024342,
+    "uncompressed": 99024342,
+    "crc": 4092112923,
+    "method": 0
+  },
+  {
+    "name": "20/20_2_scan.nii.gz",
+    "offset": 1663710717,
+    "size": 24251165,
+    "uncompressed": 24251165,
+    "crc": 3852853040,
+    "method": 0
+  },
+  {
+    "name": "20/20_3_scan.nii.gz",
+    "offset": 1687961931,
+    "size": 98539459,
+    "uncompressed": 98539459,
+    "crc": 3035564423,
+    "method": 0
+  },
+  {
+    "name": "21/",
+    "offset": 1786501423,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "21/21_0_scan.nii.gz",
+    "offset": 1786501472,
+    "size": 29467969,
+    "uncompressed": 29467969,
+    "crc": 3780709272,
+    "method": 0
+  },
+  {
+    "name": "21/21_1_scan.nii.gz",
+    "offset": 1815969490,
+    "size": 30635878,
+    "uncompressed": 30635878,
+    "crc": 3263617026,
+    "method": 0
+  },
+  {
+    "name": "21/21_2_scan.nii.gz",
+    "offset": 1846605417,
+    "size": 29901512,
+    "uncompressed": 29901512,
+    "crc": 2264753483,
+    "method": 0
+  },
+  {
+    "name": "23/",
+    "offset": 1876506962,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "23/23_0_scan.nii.gz",
+    "offset": 1876507011,
+    "size": 16655471,
+    "uncompressed": 16655471,
+    "crc": 2511215081,
+    "method": 0
+  },
+  {
+    "name": "23/23_1_scan.nii.gz",
+    "offset": 1893162531,
+    "size": 41043826,
+    "uncompressed": 41043826,
+    "crc": 3526075647,
+    "method": 0
+  },
+  {
+    "name": "23/23_2_scan.nii.gz",
+    "offset": 1934206406,
+    "size": 32632979,
+    "uncompressed": 32632979,
+    "crc": 1239749740,
+    "method": 0
+  },
+  {
+    "name": "23/23_3_scan.nii.gz",
+    "offset": 1966839434,
+    "size": 19959027,
+    "uncompressed": 19959027,
+    "crc": 2660258117,
+    "method": 0
+  },
+  {
+    "name": "24/",
+    "offset": 1986798494,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "24/24_0_scan.nii.gz",
+    "offset": 1986798543,
+    "size": 43187115,
+    "uncompressed": 43187115,
+    "crc": 2564289448,
+    "method": 0
+  },
+  {
+    "name": "24/24_1_scan.nii.gz",
+    "offset": 2029985707,
+    "size": 27391791,
+    "uncompressed": 27391791,
+    "crc": 2169275384,
+    "method": 0
+  },
+  {
+    "name": "24/24_2_scan.nii.gz",
+    "offset": 2057377547,
+    "size": 68452480,
+    "uncompressed": 68452480,
+    "crc": 2408400297,
+    "method": 0
+  },
+  {
+    "name": "25/",
+    "offset": 2125830060,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "25/25_1_scan.nii.gz",
+    "offset": 2125830109,
+    "size": 16612705,
+    "uncompressed": 16612705,
+    "crc": 1293246724,
+    "method": 0
+  },
+  {
+    "name": "25/25_2_scan.nii.gz",
+    "offset": 2142442863,
+    "size": 37128731,
+    "uncompressed": 37128731,
+    "crc": 2121641600,
+    "method": 0
+  },
+  {
+    "name": "25/25_3_scan.nii.gz",
+    "offset": 2179571643,
+    "size": 24540653,
+    "uncompressed": 24540653,
+    "crc": 663858618,
+    "method": 0
+  },
+  {
+    "name": "26/",
+    "offset": 2204112329,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "26/26_1_scan.nii.gz",
+    "offset": 2204112378,
+    "size": 95295761,
+    "uncompressed": 95295761,
+    "crc": 52680048,
+    "method": 0
+  },
+  {
+    "name": "26/26_2_scan.nii.gz",
+    "offset": 2299408188,
+    "size": 94017571,
+    "uncompressed": 94017571,
+    "crc": 47177264,
+    "method": 0
+  },
+  {
+    "name": "26/26_3_scan.nii.gz",
+    "offset": 2393425808,
+    "size": 54268561,
+    "uncompressed": 54268561,
+    "crc": 3150588401,
+    "method": 0
+  },
+  {
+    "name": "27/",
+    "offset": 2447694402,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "27/27_0_scan.nii.gz",
+    "offset": 2447694451,
+    "size": 89445108,
+    "uncompressed": 89445108,
+    "crc": 1106867319,
+    "method": 0
+  },
+  {
+    "name": "27/27_1_scan.nii.gz",
+    "offset": 2537139608,
+    "size": 92592080,
+    "uncompressed": 92592080,
+    "crc": 1256787594,
+    "method": 0
+  },
+  {
+    "name": "27/27_2_scan.nii.gz",
+    "offset": 2629731737,
+    "size": 89840887,
+    "uncompressed": 89840887,
+    "crc": 904158877,
+    "method": 0
+  },
+  {
+    "name": "27/27_3_scan.nii.gz",
+    "offset": 2719572673,
+    "size": 91312937,
+    "uncompressed": 91312937,
+    "crc": 455826732,
+    "method": 0
+  },
+  {
+    "name": "28/",
+    "offset": 2810885643,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "28/28_0_scan.nii.gz",
+    "offset": 2810885692,
+    "size": 69234814,
+    "uncompressed": 69234814,
+    "crc": 3715063288,
+    "method": 0
+  },
+  {
+    "name": "28/28_1_scan.nii.gz",
+    "offset": 2880120555,
+    "size": 45146936,
+    "uncompressed": 45146936,
+    "crc": 1570071985,
+    "method": 0
+  },
+  {
+    "name": "28/28_2_scan.nii.gz",
+    "offset": 2925267540,
+    "size": 68970797,
+    "uncompressed": 68970797,
+    "crc": 905662304,
+    "method": 0
+  },
+  {
+    "name": "29/",
+    "offset": 2994238370,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "29/29_0_scan.nii.gz",
+    "offset": 2994238419,
+    "size": 27155968,
+    "uncompressed": 27155968,
+    "crc": 3316992780,
+    "method": 0
+  },
+  {
+    "name": "29/29_1_scan.nii.gz",
+    "offset": 3021394436,
+    "size": 53100954,
+    "uncompressed": 53100954,
+    "crc": 2153584359,
+    "method": 0
+  },
+  {
+    "name": "29/29_2_scan.nii.gz",
+    "offset": 3074495439,
+    "size": 46267242,
+    "uncompressed": 46267242,
+    "crc": 4214971009,
+    "method": 0
+  },
+  {
+    "name": "29/29_3_scan.nii.gz",
+    "offset": 3120762730,
+    "size": 26270113,
+    "uncompressed": 26270113,
+    "crc": 1594321946,
+    "method": 0
+  },
+  {
+    "name": "3/",
+    "offset": 3147032875,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "3/3_0_scan.nii.gz",
+    "offset": 3147032922,
+    "size": 83205037,
+    "uncompressed": 83205037,
+    "crc": 1737295672,
+    "method": 0
+  },
+  {
+    "name": "3/3_1_scan.nii.gz",
+    "offset": 3230238006,
+    "size": 74305659,
+    "uncompressed": 74305659,
+    "crc": 4290726254,
+    "method": 0
+  },
+  {
+    "name": "3/3_2_scan.nii.gz",
+    "offset": 3304543712,
+    "size": 75471331,
+    "uncompressed": 75471331,
+    "crc": 377280156,
+    "method": 0
+  },
+  {
+    "name": "3/3_3_scan.nii.gz",
+    "offset": 3380015090,
+    "size": 73853699,
+    "uncompressed": 73853699,
+    "crc": 1611718067,
+    "method": 0
+  },
+  {
+    "name": "31/",
+    "offset": 3453868822,
+    "size": 0,
+    "uncompressed": 0,
+    "crc": 0,
+    "method": 0
+  },
+  {
+    "name": "31/31_0_scan.nii.gz",
+    "offset": 3453868871,
+    "size": 143103578,
+    "uncompressed": 143103578,
+    "crc": 2737949114,
+    "method": 0
+  }
+]

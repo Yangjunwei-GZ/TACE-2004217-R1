@@ -1,0 +1,32 @@
+{
+  "source_patients": 233,
+  "source_masks": 377,
+  "official_mask_count": 377,
+  "old_patients": 195,
+  "old_pairs": 318,
+  "phase_counts": {
+    "0": 4,
+    "1": 230,
+    "2": 109,
+    "3": 34
+  },
+  "correctly_paired": 341,
+  "DICOM_files": 0,
+  "eligible_arterial_patients": 118,
+  "eligible_arterial_events": 83,
+  "active_analysis_ROI_records": 202,
+  "source_arterial_candidates": 126,
+  "source_arterial_ROI_records": 230,
+  "exclusion_counts": {
+    "Included": 118,
+    "No source arterial-phase tumour mask": 107,
+    "Delayed phase": 1,
+    "Indeterminate phase": 2,
+    "No valid ROI": 5
+  },
+  "independent_radiologist_review": "Existing review records retained; author clarification dated 2026-10-21 assigns subsequent 57 QC items and 17 masks to physician, without establishing new independence or dates",
+  "metadata_scope": "Derived consolidation metadata, not new fitting or rewritten historical run record",
+  "metadata_updated_date": "2026-10-21",
+  "original_snapshot_sha256": "582d287d186c482aabe1b66d4e40c8d0ae85330782156d0a3bcc70a154cff532",
+  "scientific_matrix_sha256": "75ceb3fdd9f77831c2a2845b20e409054928bfd6885792a4a3111b33a824b183"
+}

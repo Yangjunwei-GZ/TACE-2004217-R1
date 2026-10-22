@@ -1,0 +1,46 @@
+﻿variable,definition,n,missing,unique,range_or_levels,post_treatment
+PATPRI,Unique patient number ,233,0,233,"[2, 3, 5, 7, 8, 10, 13, 14, 15, 16, 18, 19, 20, 21, 23]",False
+age,Age of the study participants (years),233,0,45,"[63, 76, 80, 58, 65, 69, 67, 68, 60, 83, 77, 73, 56, 75, 55]",False
+gender_woman,Woman gender of the study participant (0-no; 1-yes),233,0,2,"[0, 1]",False
+death,Occurence of study endpoint (0 - alive at last follow-up; 1 - deceased),233,0,2,"[1, 0]",True
+initial_tace_answer,Outcome of first TACE cycle expressed in per-patient LR-TR category (0 - nonviable; 1 - equivocal; 2 - viable),233,4,3,"[2.0, 0.0, 1.0]",True
+etiology_mixed,"Underlying Etiology of Chronic Liver Disease (coocurence of more than one of following: HBV, HCV, Alcoholic, Mixed, NASH or Cryptogenic)",233,0,2,"[0, 1]",False
+etiology_HCV,HCV infection,233,0,2,"[1, 0]",False
+etiology_HBV,HBV infection,233,0,2,"[0, 1]",False
+etiology_alcoholic,Alcoholic cirrhosis,233,0,2,"[0, 1]",False
+etiology_NASH,non-alcoholic steatohepatosis,233,0,1,[0],False
+etiology_cryptogenic,Cryptogenic cirhosis,233,0,2,"[0, 1]",False
+lesions_number,Number of HCC Lesions,233,0,4,"[2, 1, 3, 4]",False
+lesion1_localisation,Lesion Location (Left or right liver lobe),233,0,2,"['left', 'right']",False
+lesion1_diameter,Maximal diameter in axial plane (portal phase CT),233,0,84,"[27, 78, 45, 40, 93, 80, 42, 46, 61, 30, 116, 59, 23, 26, 65]",False
+lesion1_LIRADS,Pre-TACE LI-RADS classification of lesions,233,0,3,"['5', '4', 'M']",False
+lesion2_localisation,Lesion Location (Left or right liver lobe),233,147,2,"['right', 'left']",False
+lesion2_diameter,Maximal diameter in axial plane (portal phase CT),233,147,35,"[36.0, 17.0, 14.0, 11.0, 25.0, 59.0, 15.0, 22.0, 32.0, 47.0, 13.0, 23.0, 60.0, 9.0, 12.0]",False
+lesion2_LIRADS,Pre-TACE LI-RADS classification of lesions,233,151,3,"[5.0, 3.0, 4.0]",False
+lesion3_localisation,Lesion Location (Left or right liver lobe),233,202,2,"['left', 'right']",False
+lesion3_diameter,Maximal diameter in axial plane (portal phase CT),233,202,16,"[11.0, 16.0, 12.0, 21.0, 10.0, 13.0, 9.0, 20.0, 28.0, 42.0, 14.0, 18.0, 22.0, 31.0, 30.0]",False
+lesion3_LIRADS,Pre-TACE LI-RADS classification of lesions,233,205,3,"[4.0, 5.0, 3.0]",False
+biopsy,"If a tumor biopsy was performed (1 for yes, 0 for no)",233,0,2,"[0, 1]",False
+lab_albumin,Serum level of albumin (g/l),233,0,27,"[3.8, 3.2, 3.7, 4.2, 4.7, 4.5, 2.9, 3.0, 2.5, 3.9, 4.0, 4.3, 4.8, 4.1, 3.1]",False
+lab_creatinine,Serum level of creatinine (mg/dl),233,0,77,"[0.73, 0.86, 0.76, 0.54, 1.05, 0.93, 0.85, 1.04, 0.78, 0.9, 1.34, 0.96, 0.8, 1.2, 0.92]",False
+lab_bilirubin,Serum level of total bilirubin (mg/dl),233,0,122,"[2.53, 1.22, 1.2, 0.65, 0.56, 0.75, 0.31, 1.05, 2.07, 4.04, 1.63, 0.55, 0.98, 1.33, 0.9]",False
+lab_afp,Serum level of α-fetoprotein (ng/ml),233,0,180,"[28.7, 31300.0, 5.16, 6.15, 7.75, 4.44, 4.55, 22.9, 6.94, 5.3, 13.0, 95.0, 58.4, 4.0, 10.0]",False
+lab_inr,International normalized ratio,233,0,59,"[1.5, 1.09, 1.12, 1.14, 1.02, 1.1, 1.05, 1.17, 1.26, 1.85, 1.21, 1.0, 1.01, 1.16, 1.15]",False
+lab_alt,Serum level of alanine aminotransferase (IU/L),233,0,101,"[61, 42, 46, 31, 45, 66, 24, 37, 65, 56, 88, 52, 12, 36, 63]",False
+tace_number,Total number of TACE sessions,233,0,9,"[4, 6, 5, 2, 3, 8, 10, 1, 7]",True
+initial_LR_TR,Outcome of first TACE cycle expressed in per-patient LR-TR category (0 - nonviable; 1 - equivocal; 2 - viable),233,0,3,"[2, 0, 1]",True
+if_nonV,did patient achieved nonviable response according LR-TR? (1 - yes; 0 - no),233,3,2,"[0.0, 1.0]",True
+progression,Occurence of study endpoint (0 - no progression during follow-up; 1 - progression reported),233,0,2,"[0, 1]",True
+cps,Child-Pugh Score ,233,0,2,"[1, 2]",False
+lesion1_dia_30,If any lesion diameter is >30 mm? (0-no; 1-yes),233,0,2,"[0, 1]",False
+bclc,Barcelona-Clinic Liver Cancer Stage (0-A; 1-B),233,0,2,"[1, 0]",False
+survival_time,Time from index day (first TACE) to death or last follow-up (in days),233,0,216,"[277, 1276, 1022, 698, 879, 957, 1100, 1782, 1019, 2301, 186, 1023, 1104, 2322, 858]",True
+progression_time,Time from index day (first TACE) to progression (date of CT/MRI with reported progression) or last follow-up without progression (in days),233,125,103,"[1088.0, 899.0, 312.0, 693.0, 679.0, 700.0, 474.0, 836.0, 1054.0, 771.0, 367.0, 564.0, 290.0, 46.0, 984.0]",True
+etiology,Viral/alcoholic cirrhosis/other cause,233,0,3,"['virus', 'alcoholic', 'other']",False
+hap_score,Hepatoma arterial embolization score - Albumin <36 g/dl; AFP >400 ng/ml; Bilirubin >17 umol/l (httpSOURCE_PROJECT_PATH,233,1,5,"[1.0, 4.0, 2.0, 0.0, 3.0]",False
+mhap_2,Modified hepatoma arterial embolization score - HAP criteria + Tumor number ≥2 (httpSOURCE_PROJECT_PATH,233,1,6,"[2.0, 4.0, 1.0, 0.0, 3.0, 5.0]",False
+albi_tae,ALBI-TAE score - ALBI grade. AFP >200 ng/ml; Up-to-11 criteria (httpSOURCE_PROJECT_PATH,233,1,4,"[1.0, 2.0, 0.0, 3.0]",False
+6_12,Six and twelve score - Largest tumor diameter; Tumor number - continous (httpSOURCE_PROJECT_PATH,233,0,89,"[5.6, 8.8, 5.5, 7.0, 10.3, 9.0, 5.2, 7.6, 7.1, 5.0, 12.6, 7.9, 3.7, 3.6, 5.7]",False
+6_12_score,Six and twelve score (0/1/2),233,0,3,"[0, 1, 2]",False
+nonv,Not provided,233,6,2,"[0.0, 1.0]",True
+time_to_nonv,Not provided,233,120,77,"[119.0, 95.0, 62.0, 84.0, 251.0, 49.0, 238.0, 28.0, 57.0, 290.0, 46.0, 75.0, 59.0, 83.0, 34.0]",True

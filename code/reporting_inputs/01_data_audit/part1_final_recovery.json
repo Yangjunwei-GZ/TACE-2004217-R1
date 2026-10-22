@@ -1,0 +1,266 @@
+[
+  {
+    "name": "35_1_scan.nii.gz",
+    "success": true,
+    "sha256": "e9719ebc91970b5373993c47052cd79adf4b1caa1bea93aab9df096a6f090e12",
+    "crc32": 667724069,
+    "bytes": 78156457
+  },
+  {
+    "name": "36_1_scan.nii.gz",
+    "success": true,
+    "sha256": "ceef9b64f48beccf17fc5c660fd43f438fd475803c0ac2234eede18c9b25b233",
+    "crc32": 2365782923,
+    "bytes": 24892814
+  },
+  {
+    "name": "37_1_scan.nii.gz",
+    "success": true,
+    "sha256": "3885ed1bd6c7203bc9a09d080ec43283317126b753ad3f44b74c2b1704f7f6fb",
+    "crc32": 3963945158,
+    "bytes": 58697249
+  },
+  {
+    "name": "33_1_scan.nii.gz",
+    "success": true,
+    "sha256": "06c7ae548f6a14c469cc202383152c6727d769f2735ed7a0bd8d477edef177a7",
+    "crc32": 394627924,
+    "bytes": 48910896
+  },
+  {
+    "name": "38_1_scan.nii.gz",
+    "success": true,
+    "sha256": "9b62dbab1a6b5f3cd807736638e68ab7bb6371d01df07ff74ab77b9e49870b62",
+    "crc32": 3050427293,
+    "bytes": 50373187
+  },
+  {
+    "name": "39_1_scan.nii.gz",
+    "success": true,
+    "sha256": "8aa15fb71acc41ca940d12529adf64528937dc0a6c278ab94e2baac8ec5e61d7",
+    "crc32": 991371764,
+    "bytes": 44651961
+  },
+  {
+    "name": "44_1_scan.nii.gz",
+    "success": true,
+    "sha256": "b18af8430d8cbf18c7af9b52c7850e4e1bc722ed1919867fda1741036f4bb589",
+    "crc32": 1304981179,
+    "bytes": 52595509
+  },
+  {
+    "name": "45_1_scan.nii.gz",
+    "success": true,
+    "sha256": "f86d355103dd8853cc7e241d0ea072f33bfff71e19ef7f05cd9df5057116a50d",
+    "crc32": 3050386185,
+    "bytes": 52744437
+  },
+  {
+    "name": "53_1_scan.nii.gz",
+    "success": true,
+    "sha256": "06cd3d0755e5f26191be2861a464bf795829c1d95e79b66729b5fd6f8738d1b1",
+    "crc32": 1660341401,
+    "bytes": 76741636
+  },
+  {
+    "name": "61_1_scan.nii.gz",
+    "success": true,
+    "sha256": "14acac9b84cf2570e858643afb1c59987c379208efcddf868e7a91fae19d272c",
+    "crc32": 1371164296,
+    "bytes": 44502034
+  },
+  {
+    "name": "62_1_scan.nii.gz",
+    "success": true,
+    "sha256": "816ad53ddf31ba2b57834d257e8058ef43e11dee28efd73044759a1e19abe7b5",
+    "crc32": 710105041,
+    "bytes": 57513923
+  },
+  {
+    "name": "63_1_scan.nii.gz",
+    "success": true,
+    "sha256": "b99f94081349a77cd485b0b698516cb492083773779877176893147a496623d4",
+    "crc32": 796203547,
+    "bytes": 55174050
+  },
+  {
+    "name": "69_1_scan.nii.gz",
+    "success": true,
+    "sha256": "27000c66249add30f495bfc5110fe2494f3e0512daf7f0f1d0e9ed67977e038a",
+    "crc32": 1066730924,
+    "bytes": 50712649
+  },
+  {
+    "name": "72_1_scan.nii.gz",
+    "success": true,
+    "sha256": "829e2d9c0905de5036bf5f6423158a0b100ff736415213983e810c2887fc2785",
+    "crc32": 3085984568,
+    "bytes": 62804164
+  },
+  {
+    "name": "73_1_scan.nii.gz",
+    "success": true,
+    "sha256": "f7325b8567a29efc79a5445d159eb681784c817ce63d5d95fda74c2047313616",
+    "crc32": 1777331446,
+    "bytes": 60187569
+  },
+  {
+    "name": "74_1_scan.nii.gz",
+    "success": true,
+    "sha256": "01548aa11733a0c729b9c2df2f490a1955efac521b8679564452a18db70e5240",
+    "crc32": 396436693,
+    "bytes": 79406017
+  },
+  {
+    "name": "77_1_scan.nii.gz",
+    "success": true,
+    "sha256": "33aa5c0fcce82ee8a96b711802561c689c8bf1af31e3023535390df348e3e2b5",
+    "crc32": 644190466,
+    "bytes": 102747617
+  },
+  {
+    "name": "7_1_scan.nii.gz",
+    "success": true,
+    "sha256": "4c85bb687bfcebb86cd97f42a18c1c6725b218d593252491fe9ade1171c32ad3",
+    "crc32": 262431342,
+    "bytes": 61598698
+  },
+  {
+    "name": "31_2_scan.nii.gz",
+    "success": true,
+    "sha256": "4e5cb1acde21c6d9a8113bb2943f33ba5f3e4b4efc37094b88ac27d1797a1d7a",
+    "crc32": 1538898237,
+    "bytes": 14031858
+  },
+  {
+    "name": "34_3_scan.nii.gz",
+    "success": true,
+    "sha256": "f4e4ab2d9ce792625fff965e9e4d96bb6627505ee6afc1c22a5f6068c8c6bdfc",
+    "crc32": 1827144086,
+    "bytes": 27305255
+  },
+  {
+    "name": "8_1_scan.nii.gz",
+    "success": false,
+    "reason": "incomplete chunks"
+  },
+  {
+    "name": "41_3_scan.nii.gz",
+    "success": true,
+    "sha256": "2e95e983df20971b4b3ff7ce8aede022aff3f1577a3605e2c76ea0236dbcfd78",
+    "crc32": 211456560,
+    "bytes": 26403076
+  },
+  {
+    "name": "42_2_scan.nii.gz",
+    "success": true,
+    "sha256": "136d168a950832431e55d8227b44eb7ffe41f72c293ea4205f192bd6e011f7de",
+    "crc32": 1170065831,
+    "bytes": 34286427
+  },
+  {
+    "name": "43_2_scan.nii.gz",
+    "success": true,
+    "sha256": "d07f80ab9be8249e167cfb015473833c13ac4c45484a3aa3260385129b7160d8",
+    "crc32": 3817801954,
+    "bytes": 47132700
+  },
+  {
+    "name": "46_2_scan.nii.gz",
+    "success": true,
+    "sha256": "916f6698c14f5a7b9196793cfc5df36cfcd9165491a6f93ccf1f7cacb2c50dd5",
+    "crc32": 2071891835,
+    "bytes": 46680812
+  },
+  {
+    "name": "47_2_scan.nii.gz",
+    "success": true,
+    "sha256": "eda7ed4b545f456be46ad80383af438e60f003f27ff5ebee1f590334e67c08ae",
+    "crc32": 3106492479,
+    "bytes": 39108744
+  },
+  {
+    "name": "48_2_scan.nii.gz",
+    "success": true,
+    "sha256": "d5c051e7c4fb42e73f8058e28b7c55e3772e0e5d3c87981842fa917042957c22",
+    "crc32": 1671915948,
+    "bytes": 44366044
+  },
+  {
+    "name": "50_2_scan.nii.gz",
+    "success": true,
+    "sha256": "0afa948db6fc494ad25f3b776c17dfe75839338bf199f674c2699443151adc1a",
+    "crc32": 1673038857,
+    "bytes": 40449420
+  },
+  {
+    "name": "54_2_scan.nii.gz",
+    "success": true,
+    "sha256": "c153344b2d87b47b6f28eb0edc5c36d973aecb5850413877e09a6ac336344487",
+    "crc32": 1846845688,
+    "bytes": 56938026
+  },
+  {
+    "name": "56_2_scan.nii.gz",
+    "success": true,
+    "sha256": "855c9c3ef21aeb31d35196a75b23353dc88776f442c62530ec31655d67c0d1c5",
+    "crc32": 775922024,
+    "bytes": 47871707
+  },
+  {
+    "name": "57_3_scan.nii.gz",
+    "success": true,
+    "sha256": "e8b40beed016d1388ccecb33e7c8226947d21e2d184388429455b611c7bc2011",
+    "crc32": 3247591098,
+    "bytes": 16674670
+  },
+  {
+    "name": "58_2_scan.nii.gz",
+    "success": true,
+    "sha256": "c5150531ac779d4b5b088ed6ea018c93fdc21c74697f71953796959eb762969e",
+    "crc32": 1538887193,
+    "bytes": 45045428
+  },
+  {
+    "name": "59_2_scan.nii.gz",
+    "success": true,
+    "sha256": "9f4ab80d67608eb42db516802c7a9835198f60e4a0661a89594e4f1da7aa5483",
+    "crc32": 2159005675,
+    "bytes": 45500681
+  },
+  {
+    "name": "5_2_scan.nii.gz",
+    "success": true,
+    "sha256": "8926b0a0ab1f1d2856ce898ec8eafb3b70582d80795205202247d8f61abf1bfa",
+    "crc32": 483447199,
+    "bytes": 38403568
+  },
+  {
+    "name": "60_2_scan.nii.gz",
+    "success": true,
+    "sha256": "27c07fc4e31233105ee1a1b0530b7b9b10ed09215883137503f266e4171e6fbc",
+    "crc32": 1857707184,
+    "bytes": 46928537
+  },
+  {
+    "name": "65_2_scan.nii.gz",
+    "success": true,
+    "sha256": "5f00f426f8d2430e6acc53bde987528eebfbafcb0df77871d5aaef74be99703c",
+    "crc32": 3424785220,
+    "bytes": 70088352
+  },
+  {
+    "name": "66_2_scan.nii.gz",
+    "success": true,
+    "sha256": "cb981e8c12ea7eab552b573cc69db6802a728c0bed996054f63a7167b0cd14a3",
+    "crc32": 1200234571,
+    "bytes": 47478906
+  },
+  {
+    "name": "67_2_scan.nii.gz",
+    "success": true,
+    "sha256": "feab36ba869a19f5048b33ed8fc16203c09cc505fca0875ff931d6072949991a",
+    "crc32": 3289529793,
+    "bytes": 42056095
+  }
+]

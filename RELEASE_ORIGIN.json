@@ -1,0 +1,15 @@
+{
+  "source_candidate_filename": "TACE_2004217_R1_Public_Candidate_LOCAL_ONLY_20261022.zip",
+  "source_candidate_sha256": "53a580794817a4226741fcb05aed6e0007d34b59e5e9dc2025578cb204719e3d",
+  "source_candidate_members": 117,
+  "release_tag": "v1.0.0",
+  "repository_URL": "https://github.com/Yangjunwei-GZ/TACE-2004217-R1",
+  "release_URL": "https://github.com/Yangjunwei-GZ/TACE-2004217-R1/releases/tag/v1.0.0",
+  "release_prepared_at": "2026-10-22T16:52:37.801029+08:00",
+  "allowed_change_scope": "Publication/version/citation documentation and file manifest only",
+  "scientific_values_algorithms_protocols_masks_changed": false,
+  "new_feature_extraction": false,
+  "new_model_training": false,
+  "public_checkpoint_scope": "510 identities, no original checkpoint bodies",
+  "historical_attribution_preserved": true
+}

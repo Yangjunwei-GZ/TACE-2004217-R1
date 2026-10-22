@@ -1,0 +1,73 @@
+{
+  "actual_input": {
+    "patients": 118,
+    "events": 83,
+    "censored": 35,
+    "active_ROIs": 202,
+    "features_per_ROI": 107,
+    "representatives": 118
+  },
+  "fingerprints": {
+    "analysis_matrix_sha256": "75ceb3fdd9f77831c2a2845b20e409054928bfd6885792a4a3111b33a824b183",
+    "configuration_file_sha256": "6fe460496d0d4c1dbc058a521c94b041e5edf7c86021c767cf5ccecafd728875",
+    "configuration_sha256": "1b75f6b6523386b5c2af13913bc28c076ed20c7ab5f70fa36f6b7b067f2c3694"
+  },
+  "plan_sha256": "915c2a9b1af17abe2b276c6ba0e8777579b4dbf26109d4800e82b6f916916ae2",
+  "actual_checkpoint_count": 510,
+  "applicable_models": [
+    "clinical",
+    "clinical_diameter",
+    "clinical_selected_volume",
+    "clinical_total_volume",
+    "clinical_mean_hu",
+    "clinical_median_hu",
+    "clinical_p10_hu",
+    "clinical_diameter_mean_hu",
+    "clinical_diameter_p10_hu",
+    "clinical_axial_diameter",
+    "clinical_legacy_seven",
+    "clinical_radiomics",
+    "clinical_diameter_radiomics",
+    "clinical_selected_volume_radiomics",
+    "clinical_total_volume_radiomics",
+    "clinical_diameter_mean_hu_radiomics",
+    "clinical_diameter_p10_hu_radiomics",
+    "radiomics_only",
+    "clinical_age_spline",
+    "clinical_size_intensity_RSF",
+    "clinical_size_intensity_radiomics_RSF"
+  ],
+  "outer_folds": 5,
+  "ledger_counts": {
+    "point": {
+      "planned": 10,
+      "attempted": 10,
+      "succeeded": 10,
+      "failed": 0,
+      "reused": 0
+    },
+    "bootstrap": {
+      "planned": 500,
+      "attempted": 500,
+      "succeeded": 500,
+      "failed": 0,
+      "reused": 0
+    }
+  },
+  "task_ledger_rows": 1020,
+  "primary_comparison_recomputed": {
+    "baseline": "clinical_diameter_mean_hu",
+    "combined": "clinical_diameter_mean_hu_radiomics",
+    "paired_delta_C_index": -0.033737024221453304,
+    "repeat_mean_delta": -0.029917256754414846,
+    "repeat_SD_delta": 0.010962392103752279,
+    "CI_lower": -0.09207584210690886,
+    "CI_upper": 0.05457958159472272,
+    "bootstrap_joint_complete": 500,
+    "point_joint_complete": 10
+  },
+  "status": "PASS_ACTUAL_118_RUN_EVIDENCE_RECOMPUTED_READONLY",
+  "scope": "Public identifier/hash evidence for the completed source run; original checkpoint content is not rewritten. These are not new model fits.",
+  "exact_original_checkpoints_supplied_in_separate_local_archive": true,
+  "checkpoint_manifest_sha256": "41a210213f515af0064d5a25a0affcb5aef5e5489d1114a1477bc31c9fb7e09c"
+}

@@ -1,0 +1,11 @@
+{
+  "n_patients": 118,
+  "events": 83,
+  "censored": 35,
+  "n_lesions": 202,
+  "features": 107,
+  "reproduction_pass": false,
+  "selection_changed": 0,
+  "extraction_failed": 0,
+  "phase": 1
+}

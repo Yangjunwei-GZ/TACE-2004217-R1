@@ -1,0 +1,7 @@
+# Reporting estimand alignment amendment
+
+Recorded on 15 October 2026 before aggregated revision validation performance or paired differences were inspected. The original protocol/configuration remains unchanged and preserved with its original hash.
+
+The completed/ongoing bootstrap unit is one complete grouped five-fold CV estimator, with full inner development, paired evaluation and outcome-independent fold assignment. A ten-repeat CV average has a different sampling variance. Therefore, the primary point estimate will use the predefined point run 0 (seed 20261014), and its interval will use 500 patient bootstrap repetitions of the same randomized five-fold development/evaluation procedure. The ten-repeat mean, SD and range will be labelled split-sensitivity summaries, with no bootstrap interval falsely attached to that average. Both primary point and paired difference come from run 0; each bootstrap difference remains within its matched run.
+
+This reporting amendment is based only on statistical estimand alignment, not on the magnitude, direction or significance of any result. No alternative point run was inspected or selected. No model, feature selection, input population, seed, training fold, prediction, bootstrap record or metric value is changed. The primary estimator targets internally cross-validated performance of the randomized five-fold training procedure, not optimism-corrected performance of the final full-cohort fixed score. Finite-sample, model-selection and bootstrap-CV limitations remain explicit.

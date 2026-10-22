@@ -1,0 +1,10 @@
+{
+  "version": "fixed-before-reextraction-20261022",
+  "feature_and_matrix_atol": 1e-08,
+  "feature_and_matrix_rtol": 1e-10,
+  "formula": "abs(actual-reference) <= atol + rtol*abs(reference)",
+  "max_relative_error_denominator": "max(abs(reference),1e-12)",
+  "required": "identical column schema, row order, public IDs, representative and clinical count; exact non-numeric values except relocated path columns; finite 107 feature values. Missing clinical fields must agree.",
+  "change_policy": "Failure is reported; tolerances are not relaxed after inspecting discrepancies.",
+  "new_training_authorized": false
+}

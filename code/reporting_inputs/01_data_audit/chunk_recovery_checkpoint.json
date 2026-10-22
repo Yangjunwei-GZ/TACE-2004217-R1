@@ -1,0 +1,128 @@
+{
+  "completed": 3640,
+  "successful": 3627,
+  "total": 3645,
+  "elapsed": 2118.3381638526917,
+  "last": [
+    {
+      "file": "67_2_scan.nii.gz.0071.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0057.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0062.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0045.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0059.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0056.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0061.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0080.part",
+      "status": "complete",
+      "bytes": 113104,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0058.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0066.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0069.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0067.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0064.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0063.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0065.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0074.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0070.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0078.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0068.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    },
+    {
+      "file": "67_2_scan.nii.gz.0075.part",
+      "status": "complete",
+      "bytes": 524288,
+      "error": ""
+    }
+  ]
+}

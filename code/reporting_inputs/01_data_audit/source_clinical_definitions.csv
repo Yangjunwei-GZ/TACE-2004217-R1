@@ -1,0 +1,44 @@
+﻿Variable,Description
+PATPRI,Unique patient number 
+age,Age of the study participants (years)
+gender_woman,Woman gender of the study participant (0-no; 1-yes)
+death,Occurence of study endpoint (0 - alive at last follow-up; 1 - deceased)
+initial_tace_answer,Outcome of first TACE cycle expressed in per-patient LR-TR category (0 - nonviable; 1 - equivocal; 2 - viable)
+etiology_mixed,"Underlying Etiology of Chronic Liver Disease (coocurence of more than one of following: HBV, HCV, Alcoholic, Mixed, NASH or Cryptogenic)"
+etiology_HCV,HCV infection
+etiology_HBV,HBV infection
+etiology_alcoholic,Alcoholic cirrhosis
+etiology_NASH,non-alcoholic steatohepatosis
+etiology_cryptogenic,Cryptogenic cirhosis
+lesions_number,Number of HCC Lesions
+lesion1_localisation,Lesion Location (Left or right liver lobe)
+lesion1_diameter,Maximal diameter in axial plane (portal phase CT)
+lesion1_LIRADS,Pre-TACE LI-RADS classification of lesions
+lesion2_localisation,Lesion Location (Left or right liver lobe)
+lesion2_diameter,Maximal diameter in axial plane (portal phase CT)
+lesion2_LIRADS,Pre-TACE LI-RADS classification of lesions
+lesion3_localisation,Lesion Location (Left or right liver lobe)
+lesion3_diameter,Maximal diameter in axial plane (portal phase CT)
+biopsy,"If a tumor biopsy was performed (1 for yes, 0 for no)"
+lesion3_LIRADS,Pre-TACE LI-RADS classification of lesions
+lab_albumin,Serum level of albumin (g/l)
+lab_creatinine,Serum level of creatinine (mg/dl)
+lab_bilirubin,Serum level of total bilirubin (mg/dl)
+lab_afp,Serum level of α-fetoprotein (ng/ml)
+lab_inr,International normalized ratio
+lab_alt,Serum level of alanine aminotransferase (IU/L)
+tace_number,Total number of TACE sessions
+initial_LR_TR,Outcome of first TACE cycle expressed in per-patient LR-TR category (0 - nonviable; 1 - equivocal; 2 - viable)
+if_nonV,did patient achieved nonviable response according LR-TR? (1 - yes; 0 - no)
+progression,Occurence of study endpoint (0 - no progression during follow-up; 1 - progression reported)
+cps,Child-Pugh Score 
+lesion1_dia_30,If any lesion diameter is >30 mm? (0-no; 1-yes)
+bclc,Barcelona-Clinic Liver Cancer Stage (0-A; 1-B)
+survival_time,Time from index day (first TACE) to death or last follow-up (in days)
+progression_time,Time from index day (first TACE) to progression (date of CT/MRI with reported progression) or last follow-up without progression (in days)
+etiology,Viral/alcoholic cirrhosis/other cause
+hap_score,Hepatoma arterial embolization score - Albumin <36 g/dl; AFP >400 ng/ml; Bilirubin >17 umol/l (httpSOURCE_PROJECT_PATH
+mhap_2,Modified hepatoma arterial embolization score - HAP criteria + Tumor number ≥2 (httpSOURCE_PROJECT_PATH
+albi_tae,ALBI-TAE score - ALBI grade. AFP >200 ng/ml; Up-to-11 criteria (httpSOURCE_PROJECT_PATH
+6_12,Six and twelve score - Largest tumor diameter; Tumor number - continous (httpSOURCE_PROJECT_PATH
+6_12_score,Six and twelve score (0/1/2)

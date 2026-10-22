@@ -1,0 +1,27 @@
+{
+  "legacy_audit": {
+    "original_sha256": "86a61145f644eebf90fb301c442ec9958e985f718771fb792cf530a3ebcae5bf",
+    "release_sha256": "991ff138088dc65007d55808f4269621c942c6eff0762d447d913e021194b38f",
+    "changed_column": "source",
+    "changed_cells": 8,
+    "rule": "Replace local directory with source_data/metadata/; preserve filename and code-line suffix; all non-path fields and row order identical."
+  },
+  "matrix_and_features": [
+    {
+      "file": "data/analysis_matrix.csv",
+      "original_sha256": "75ceb3fdd9f77831c2a2845b20e409054928bfd6885792a4a3111b33a824b183",
+      "release_sha256": "88309df6b7640a3170acdf9af5bc802910b9dda73be366d80231ce8e4bf7b907",
+      "nonpath_projection_sha256": "82941514a15aef4ea0f28518cc3c702456af8319f9a2d8a94495acb6be651444",
+      "row_order_and_public_IDs_identical": true,
+      "nonpath_fields_exactly_identical": true
+    },
+    {
+      "file": "reporting_inputs/02_extraction/arterial_lesion_features.csv",
+      "original_sha256": "aa43ef20788b28a1dac48a60e0e63c7eac1d9b4413d85232c49b851c4d885eba",
+      "release_sha256": "de6c74a1a422967311b7e14fb0d27b3923d9039f846e4446aed8cce08d2bfff8",
+      "nonpath_projection_sha256": "fabdfd110d284992418395088283f2954471955cff7409232257ca8ac6e15c10",
+      "row_order_and_public_IDs_identical": true,
+      "nonpath_fields_exactly_identical": true
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "run": "scientific_run_20261019_222436",
+  "origin": "Previously frozen patient, candidate, image and representative rosters; no decision inferred from feature values.",
+  "source_roster_sha256": {
+    "FINAL_PATIENT_AND_REPRESENTATIVE_ROSTER.csv": "ef5435f1e6cbbbac5c1eed65089247b7450d5880de705e9901664f5820f39598",
+    "FINAL_IMAGE_AND_ALIAS_ROSTER.csv": "7445b9568bda80693622364cbeea2efdaac11638afd7a033a63e3d151ce00129",
+    "FINAL_CANDIDATE_DISPOSITION.csv": "f642ac7cf39fedd32e971332759c0de0484c71b9596ff4f238e05fcf1015d087"
+  },
+  "physician_work": "Author-confirmed 57 QC items, 17 final masks and two local contour edits.",
+  "later_QC_specific_date_blinding_independence": "unknown",
+  "P112": "Keep the frozen dispositions and source clinical lesion count; do not apply any additional duplicate-volume subtraction.",
+  "private_records": "Private review forms, signatures and local machine paths are not distributed."
+}

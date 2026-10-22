@@ -1,0 +1,3 @@
+﻿HR_gate_applied,selected_model,apparent_C_index,conditional_corrected_C_index,eligible_models,source,scope
+True,D_fixed_first_round_unpenalized_cox,0.6001410022912872,0.5958083247093837,5,source_data/metadata/05_CORRECTED_CANDIDATE_MODELS.csv,Deterministic replay of saved historical model selection; no refitting; not complete-development validation
+False,D_fixed_first_round_unpenalized_cox,0.6001410022912872,0.5958083247093837,5,source_data/metadata/05_CORRECTED_CANDIDATE_MODELS.csv,Deterministic replay of saved historical model selection; no refitting; not complete-development validation

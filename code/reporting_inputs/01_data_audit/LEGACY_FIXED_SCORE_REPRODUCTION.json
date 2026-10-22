@@ -1,0 +1,42 @@
+{
+  "n": 195,
+  "events": 141,
+  "risk_reconstruction_max_abs_error": 2.220446049250313e-16,
+  "apparent_C_index": 0.6001410022912872,
+  "raw_freeze_parameters": [
+    {
+      "model": "D_fixed_first_round_unpenalized_cox",
+      "feature": "original_shape_Maximum2DDiameterRow",
+      "coefficient": "0.3382359421550053",
+      "HR_per_1SD": "1.4024713664880537",
+      "abs_coefficient": "0.3382359421550053",
+      "selected": "1",
+      "standardization_mean": "58.61518471348605",
+      "standardization_std": "29.26779306246886",
+      "SD_convention": "population_ddof_0",
+      "formula_term": "0.338235942155 * z(original_shape_Maximum2DDiameterRow)",
+      "FINAL_MODEL_FROZEN": "YES",
+      "risk_score_formula": "risk_score = -0.230235931015 * z(original_firstorder_10Percentile) + 0.338235942155 * z(original_shape_Maximum2DDiameterRow)",
+      "intercept": "none",
+      "sign_reversal": "none",
+      "risk_direction": "higher score = higher mortality risk"
+    },
+    {
+      "model": "D_fixed_first_round_unpenalized_cox",
+      "feature": "original_firstorder_10Percentile",
+      "coefficient": "-0.23023593101521572",
+      "HR_per_1SD": "0.7943461694953717",
+      "abs_coefficient": "0.23023593101521572",
+      "selected": "1",
+      "standardization_mean": "44.88353714233789",
+      "standardization_std": "19.480145786453704",
+      "SD_convention": "population_ddof_0",
+      "formula_term": "-0.230235931015 * z(original_firstorder_10Percentile)",
+      "FINAL_MODEL_FROZEN": "YES",
+      "risk_score_formula": "risk_score = -0.230235931015 * z(original_firstorder_10Percentile) + 0.338235942155 * z(original_shape_Maximum2DDiameterRow)",
+      "intercept": "none",
+      "sign_reversal": "none",
+      "risk_direction": "higher score = higher mortality risk"
+    }
+  ]
+}

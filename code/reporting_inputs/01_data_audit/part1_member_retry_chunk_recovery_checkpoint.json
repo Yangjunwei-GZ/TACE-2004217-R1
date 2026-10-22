@@ -1,0 +1,108 @@
+{
+  "completed": 100,
+  "successful": 100,
+  "total": 119,
+  "elapsed": 0.0160067081451416,
+  "last": [
+    {
+      "file": "8_1_scan.nii.gz.0007.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0014.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0078.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0010.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0059.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0073.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0092.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0097.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0032.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0096.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0003.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0004.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0095.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0066.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0110.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0115.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0112.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0116.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0107.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    },
+    {
+      "file": "8_1_scan.nii.gz.0111.part",
+      "status": "resumed_complete",
+      "bytes": 524288
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "clinical_patients": 233,
+  "canonical_masks": 377,
+  "CT_members": 233,
+  "all_CT_archive_CRC_matched": true,
+  "all_mask_archive_CRC_matched": true,
+  "official_filenames_matched": true,
+  "unavailable_CT": 0,
+  "source_clinical_segmentation_count_disagreements": 26,
+  "WAW_DICOM_files": []
+}
