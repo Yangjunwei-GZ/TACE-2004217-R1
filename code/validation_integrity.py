@@ -1,7 +1,7 @@
 """Fail-closed audit of the locked TACE validation protocol.
 
-Only the Python standard library is imported.  Checkpoint presence never implies
-that a task was attempted, or that a validation run completed successfully.
+Original identity and task audits are extended by stored-survival evidence checks.
+Checkpoint presence never implies that a task was attempted or completed successfully.
 """
 from collections import Counter
 from datetime import datetime, timezone
@@ -16,6 +16,7 @@ import re
 import uuid
 import shutil
 import statistics
+from survival_evidence import source_fingerprint, evidence_issues, SCHEMA_VERSION
 
 
 class ValidationIntegrityError(RuntimeError):
@@ -185,7 +186,9 @@ def _build_plan(revision, specs=None):
     if n >= 100 and deaths >= 70:
         applicable.update(RSF_SPECS)
     return dict(
-        schema_version=1, protocol='TACE_locked_10x5_plus_500_patient_bootstrap',
+        schema_version=2, protocol='TACE_locked_10x5_plus_500_patient_bootstrap',
+        prediction_evidence_schema_version=SCHEMA_VERSION,
+        execution_source_sha256=source_fingerprint(Path(__file__).resolve().parent),
         inputs={k: v for k, v in _fingerprints(revision).items() if k in INPUT_KEYS},
         configuration=cfg, planned=dict(LOCKED_COUNTS), outer_folds=5, inner_folds=3,
         applicable_models=list(applicable), model_specs=applicable,
@@ -443,6 +446,8 @@ def checkpoint_issues(checkpoint_dict, plan, path=None):
     for name in set(RSF_SPECS) - set(applicable):
         if name in summaries and (summaries[name].get('C_index') is not None or summaries[name].get('successful_folds') != 0):
             _issue(issues, 'inapplicable_rsf_summary', 'Inapplicable RSF summary must not claim successful validation', model=name, **location)
+    if not issues:
+        issues.extend(evidence_issues(run,plan))
     return issues
 
 

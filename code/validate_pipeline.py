@@ -7,6 +7,8 @@ sys.path.insert(0,str(Path(__file__).resolve().parent))
 from validation_integrity import (ensure_validation_plan, checkpoint_issues,
                                   audit_validation, verify_paired_summary, ValidationIntegrityError)
 from validation_execution import execute_validation_tasks, ValidationTasksFailed
+from survival_evidence import fitted_baseline, monthly_survival, source_fingerprint, SCHEMA_VERSION, PRIMARY_MODELS
+from run_new_cohort import require_frozen_model_inputs
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import KFold
@@ -18,7 +20,7 @@ from sksurv.util import Surv
 from sksurv.nonparametric import kaplan_meier_estimator
 from sksurv.functions import StepFunction
 
-ROOT=Path(os.environ.get('TACE_PROJECT_ROOT',str(Path.cwd())))/'revision_R1_20261014'
+ROOT=Path(os.environ.get('TACE_PROJECT_ROOT','.'))/'revision_R1_20261014'
 CFG=json.loads((ROOT/'00_protocol_and_provenance/revision_config.json').read_text())
 OUT=ROOT/'04_validation'; OUT.mkdir(exist_ok=True)
 CLINICAL=['age','sex_female','child_b','log_afp','log_tumour_count','bclc_b']
@@ -149,6 +151,7 @@ def time_metrics(train,val,risk,model,z):
     return result
 
 def one_run(run_id,mode):
+    require_frozen_model_inputs(ROOT.parent)
     plan=ensure_validation_plan(ROOT)
     path=OUT/'checkpoints'/f'{mode}_{run_id:04d}.json.gz'; path.parent.mkdir(exist_ok=True)
     if path.exists():
@@ -159,21 +162,40 @@ def one_run(run_id,mode):
     base=pd.read_csv(ROOT/'03_model_development/analysis_matrix.csv',dtype={'patient_id':str})
     seed=CFG['seed_point']+run_id if mode=='point' else CFG['seed_bootstrap']+run_id
     if mode=='bootstrap':
-        rng=np.random.default_rng(seed); d=base.iloc[rng.integers(0,len(base),len(base))].reset_index(drop=True)
-    else: d=base.copy()
+        rng=np.random.default_rng(seed); draw=rng.integers(0,len(base),len(base)); d=base.iloc[draw].reset_index(drop=True)
+    else: draw=np.arange(len(base)); d=base.copy()
     run=dict(run_id=run_id,mode=mode,seed=seed,n=len(d),unique_patients=d.patient_id.nunique(),folds=[],failures=[],analysis_matrix_sha256=hashlib.sha256((ROOT/'03_model_development/analysis_matrix.csv').read_bytes()).hexdigest(),configuration_sha256=hashlib.sha256(json.dumps(CFG,sort_keys=True).encode()).hexdigest())
     run['configuration_file_sha256']=hashlib.sha256((ROOT/'00_protocol_and_provenance/revision_config.json').read_bytes()).hexdigest()
+    run.update(prediction_evidence_schema_version=SCHEMA_VERSION,
+               execution_source_sha256=source_fingerprint(Path(__file__).resolve().parent),
+               draw_source_row_indices=draw.tolist(),draw_patient_ids=d.patient_id.tolist())
     t0=time.time()
     for fold,(i,j) in enumerate(grouped_splits(d,CFG['outer_folds'],seed)):
         train=d.iloc[i].copy(); val=d.iloc[j].copy(); assert not set(train.patient_id)&set(val.patient_id)
         record=dict(fold=fold,train_ids=train.patient_id.tolist(),validation_ids=val.patient_id.tolist(),models={})
+        record.update(train_draw_row_indices=i.tolist(),validation_draw_row_indices=j.tolist(),
+                      training_events=train.death_event.tolist(),training_times=train.os_months.tolist(),
+                      inner_splits=[dict(fold=k,seed=seed+10000+fold,
+                         train_outer_training_row_indices=ii.tolist(),validation_outer_training_row_indices=jj.tolist(),
+                         train_ids=train.iloc[ii].patient_id.tolist(),validation_ids=train.iloc[jj].patient_id.tolist())
+                         for k,(ii,jj) in enumerate(grouped_splits(train,CFG['inner_folds'],seed+10000+fold))])
         try:
             fit=develop(train,seed+10000+fold); train['radiomics_score']=rad_predict(train,fit); val['radiomics_score']=rad_predict(val,fit)
             record['radiomics_development']={k:v for k,v in fit.items() if k!='model'}
+            record['radiomics_development']['fitted_baseline']=fitted_baseline(fit['model'],train.os_months)
             for name,cols in SPECS.items():
                 try:
                     model,z,tr,basis=fit_baseline(train,val,cols,name=='clinical_age_spline'); risk=model.predict(z)
                     st=cstat(val,risk); record['models'][name]=dict(**st,transform=tr,coefficients=model.coef_.tolist(),risk=risk.tolist(),validation_events=val.death_event.tolist(),validation_times=val.os_months.tolist())
+                    record['models'][name]['fitted_baseline']=fitted_baseline(model,train.os_months)
+                    if name in PRIMARY_MODELS:
+                        record['models'][name]['monthly_survival']=monthly_survival(record['models'][name]['fitted_baseline'],risk)
+                    if basis is not None:
+                        record['models'][name]['spline_basis']={'n_features_in':int(basis.n_features_in_),
+                            'n_features_out':int(basis.n_features_out_),
+                            'degree':int(basis.degree),'extrapolation':basis.extrapolation,
+                            'include_bias':bool(basis.include_bias),
+                            'bsplines':[dict(t=b.t.tolist(),c=b.c.tolist(),k=int(b.k)) for b in basis.bsplines_]}
                     if mode=='point' and name in ['clinical','clinical_diameter_mean_hu','clinical_diameter_mean_hu_radiomics','radiomics_only']:
                         record['models'][name]['time_metrics']=time_metrics(train,val,risk,model,z)
                 except Exception as exc: record['models'][name]=dict(error=str(exc),exception_type=type(exc).__name__,traceback=traceback.format_exc())
@@ -227,6 +249,7 @@ def summarize():
     print(pd.DataFrame(summary).to_string(index=False),flush=True); print(pd.DataFrame(paired).to_string(index=False),flush=True)
 
 def main():
+    require_frozen_model_inputs(ROOT.parent)
     parser=argparse.ArgumentParser(); parser.add_argument('--mode',choices=['point','bootstrap','summary'],required=True); parser.add_argument('--workers',type=int,default=4); parser.add_argument('--start',type=int,default=0); parser.add_argument('--stop',type=int); args=parser.parse_args()
     if args.mode=='summary': summarize(); return
     limit=args.stop if args.stop is not None else CFG['point_repeats'] if args.mode=='point' else CFG['bootstrap_replicates']

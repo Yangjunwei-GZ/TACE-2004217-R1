@@ -14,7 +14,7 @@ from PIL import Image
 import SimpleITK as sitk
 from publication_data import LABELS
 from validation_integrity import audit_validation, verify_paired_summary
-ROOT=Path(os.environ.get('TACE_PROJECT_ROOT',str(Path.cwd())))/'revision_R1_20261014'; OUT=ROOT/'05_figures_and_tables/Figures'
+ROOT=Path(os.environ.get('TACE_PROJECT_ROOT','.'))/'revision_R1_20261014'; OUT=ROOT/'05_figures_and_tables/Figures'
 plt.rcParams.update({'font.family':'Arial','font.size':9,'axes.labelsize':9,'xtick.labelsize':8,'ytick.labelsize':8,'axes.spines.top':False,'axes.spines.right':False,'axes.linewidth':2,'lines.linewidth':2,'svg.fonttype':'none','pdf.fonttype':42,'legend.frameon':False})
 BLUE='#477B96'; GREEN='#4C997A'; RED='#B75D65'; GRAY='#ADB7BC'; GOLD='#B4945B'
 
@@ -45,10 +45,16 @@ def main():
     legends={}
     provenance_path=ROOT.parent/'ACTUAL_RUN_PROVENANCE.json'
     provenance=json.loads(provenance_path.read_text()) if provenance_path.is_file() else {}
-    qc_scope=('The specified 57 segmentation/geometry QC records and 17 final masks, including two local contour edits, were completed by the physician, according to the author correction dated 21 October 2026. Programming performed physical-grid resampling, versioned saving and technical/statistical computations. This attribution correction does not establish an additional review date, reader independence or blinding.')
-    from current_figure1 import main as render_current_figure1
-    render_current_figure1(['--run-root',str(ROOT.parent),'--output-root',str(OUT)])
-    legends['Figure 1']=(OUT/'Figure_1_legend.txt').read_text(encoding='utf-8').strip()
+    qc_scope=('Previously confirmed physician QC and17-mask work retain their physician attribution. The additional eight original masks were adopted as author-specified research inputs; no new independent physician boundary or L03/L04 clinical-identity evidence is inferred. Unknown review dates, independence and blinding remain unknown.')
+    source_clinical=pd.read_csv(ROOT/'01_data_audit/source_clinical_233.csv')
+    arterial=pairs[pairs.ct_phase==1];candidate_n=arterial.patient_id.nunique();candidate_masks=len(arterial)
+    fig,ax=plt.subplots(figsize=(7.09,6.1)); ax.set_xlim(0,1); ax.set_ylim(0,1); ax.axis('off')
+    boxes=[(.02,.82,.58,.14,f'Reconstructed source: {len(source_clinical)} patients / {len(pairs)} masks\nPrevious subset: 195 patients / 318 pairs\n38 patients / 59 pairs recovered from incomplete archive'),(.02,.59,.58,.14,f'Source-labelled arterial masks\n{candidate_n} patients / {candidate_masks} source records'),(.69,.59,.30,.14,f'Other source phases\n{len(source_clinical)-candidate_n} patients / {len(pairs)-candidate_masks} masks\nNot in primary analysis'),(.02,.36,.58,.14,f'Current eligible arterial input\n{s["n"]} patients / {s["lesions"]} active records\n107 Original features per lesion'),(.69,.36,.30,.14,f'Outside current primary input\n{candidate_n-s["n"]} patients\n{candidate_masks-s["lesions"]} inactive source records\nReasons and aliases in audits'),(.02,.08,.58,.18,f'Primary arterial analysis: {s["n"]} patients\n{s["events"]} deaths; {s["censored"]} censored\nLargest lesion by physical volume\nTraining-only development and paired validation')]
+    for x,y,w,h,text in boxes:
+        ax.add_patch(Rectangle((x,y),w,h,facecolor='#F2F5F6',edgecolor='#677C85',linewidth=2)); ax.text(x+w/2,y+h/2,text,ha='center',va='center',fontsize=8)
+    for ya,yb in [(.82,.73),(.59,.50),(.36,.26)]:ax.annotate('',(.31,yb),(.31,ya),arrowprops={'arrowstyle':'->','lw':2,'color':'#677C85'})
+    for start,end in [((.31,.775),(.84,.73)),((.31,.545),(.84,.50))]:ax.annotate('',end,start,arrowprops={'arrowstyle':'->','connectionstyle':'angle,angleA=0,angleB=90,rad=0','lw':2,'color':'#677C85'})
+    save(fig,'Figure_1'); legends['Figure 1']='Source-cohort reconstruction and arterial-phase analysis. Patient and lesion counts derive from source audits and the actual frozen input. Archive omission is distinguished from analysis exclusion and computational aliases. '+qc_scope
 
     names=['clinical','radiomics_only','clinical_diameter','clinical_diameter_mean_hu','clinical_diameter_mean_hu_radiomics']
     fig,(a,b)=plt.subplots(1,2,figsize=(7.09,4.0),gridspec_kw={'width_ratios':[1,1]})
@@ -89,7 +95,7 @@ def main():
     legends['Figure 5']='Representative arterial-analysis CT inputs and corresponding final analysis outlines, chosen by source identifier without selecting survival outcomes or scores. Original CT intensities and physical-coordinate overlays are shown in paired panels. '+qc_scope
 
     fig,(a,b)=plt.subplots(1,2,figsize=(7.09,3.8)); a.bar(['Successful','Failed'],[len(pd.read_csv(ROOT/'02_extraction/arterial_lesion_features.csv')),len(pd.read_csv(ROOT/'02_extraction/extraction_failures.csv'))],color=[BLUE,RED]); a.set_ylabel('Eligible arterial lesion pairs'); panel(a,'A')
-    vals=[107,int((~pairs.geometry_tiny_tolerance.fillna(False)).sum()),int((~eligibility.phase_analysis_eligible).sum())]; b.barh(['Original features','Initial source\ngeometry flags','Patients outside\nprimary phase analysis'],vals,color=[BLUE,GRAY,GOLD]); b.set_xlabel('Count'); panel(b,'B'); fig.subplots_adjust(left=.1,right=.97,wspace=.8,bottom=.2,top=.9); save(fig,'Supplementary_Figure_S1')
+    vals=[107,int((~pairs.geometry_tiny_tolerance.fillna(False)).sum()),int((~eligibility.phase_analysis_eligible).sum())]; b.barh(['Original features','Physical geometry\nrequires review','Patients outside\nprimary phase analysis'],vals,color=[BLUE,GRAY,GOLD]); b.set_xlabel('Count'); panel(b,'B'); fig.subplots_adjust(left=.1,right=.97,wspace=.8,bottom=.2,top=.9); save(fig,'Supplementary_Figure_S1')
     legends['Supplementary Figure S1']='Radiomics extraction and eligibility quality control. Counts include the final eligible arterial lesion set; geometry and phase exclusions are documented separately and are not silently discarded.'
 
     fig,axes=plt.subplots(1,3,figsize=(7.09,2.9))
@@ -99,19 +105,15 @@ def main():
             g=cal[(cal.model==model)&(cal.time_months==t)]; ax.plot(g.mean_predicted_risk,g.observed_km_risk,'o-',color=col,label=label)
         ax.set_xlim(0,1); ax.set_ylim(0,1); ax.set_xlabel(f'Mean predicted risk at {t} months'); ax.set_ylabel('Observed KM event risk'); panel(ax,letter)
     fig.legend(*axes[0].get_legend_handles_labels(),loc='lower center',ncol=2,fontsize=8,bbox_to_anchor=(.5,-.23)); fig.subplots_adjust(wspace=.55,bottom=.24,left=.09,right=.98,top=.9); save(fig,'Supplementary_Figure_S2')
-    legends['Supplementary Figure S2']='Cross-validated internal grouped calibration. Patient-level mean validation event probabilities over ten repeats are grouped into five quantiles and compared with group Kaplan-Meier event risks. This is a descriptive internal calibration assessment without confidence intervals and is subject to uncertainty from the small groups; it is not external calibration.'
+    legends['Supplementary Figure S2']='Cross-validated internal grouped calibration. Patient-level mean validation event probabilities over ten repeats are grouped into five quantiles and compared with group Kaplan-Meier event risks. This is an internal descriptive calibration assessment, with group uncertainty and small-sample limitations; it is not external calibration.'
 
     fig,ax=plt.subplots(figsize=(7.09,4.2)); corr=pd.read_csv(ROOT/'03_model_development/SIZE_INTENSITY_COLLINEARITY.csv'); selected=corr[(corr.feature=='original_shape_Maximum2DDiameterRow')&(corr.baseline=='selected_diameter_mm')].iloc[0]
     ax.scatter(data.selected_diameter_mm,data.original_shape_Maximum2DDiameterRow,color=BLUE,alpha=.75,s=15); ax.set_xlabel('Selected-lesion maximum 3D diameter (mm)'); ax.set_ylabel('Maximum 2D diameter, row (mm)'); ax.text(.03,.93,f'Spearman rho = {selected.Spearman_rho:.3f}',transform=ax.transAxes); save(fig,'Supplementary_Figure_S3')
     legends['Supplementary Figure S3']='Overlap between a historical size-related radiomics feature and maximum tumour diameter. This new sensitivity figure replaces the retired exploratory decision curve, which lacked a justified clinical action and thresholds.'
 
-    from tempfile import TemporaryDirectory
-    from summarize_selection_stability import summarize
-    from plot_selection_stability import plot_stability
-    with TemporaryDirectory() as temporary:
-        recurrence=summarize(ROOT/'04_validation',Path(temporary)/'recurrence')
-        plot_stability(recurrence['summary'],OUT/'Supplementary_Figure_S4')
-    legends['Supplementary Figure S4']='Selection recurrence of the final two features across 50 point and 2,500 bootstrap outer-training fits. Selected means absolute fitted radiomics coefficient greater than 1e-8. Joint selection is not identical complete-model reproduction. Fits overlap; no independent-binomial intervals are shown.'
+    records=pd.read_csv(ROOT/'04_validation/feature_recurrence_records.csv'); group=records[records['mode']=='point'].groupby('feature').selected.sum().sort_values(ascending=True).tail(12)/50
+    fig,ax=plt.subplots(figsize=(7.09,4.2)); ax.barh(group.index.str.replace('original_',''),group,color=BLUE); ax.set_xlabel('Recurrence in the 50 outer training fits'); ax.set_xlim(0,1); fig.subplots_adjust(left=.47,right=.97,bottom=.15,top=.97); save(fig,'Supplementary_Figure_S4')
+    legends['Supplementary Figure S4']='Feature recurrence across the 50 training fits used for repeated outer-fold point estimation. Correlated alternatives, shrinkage and variable selection are reflected in these frequencies; no feature-level biological stability claim is made.'
 
     boot=pd.read_csv(ROOT/'04_validation/validation_run_metrics.csv'); g=boot[(boot['mode']=='bootstrap')&(boot.model=='clinical_diameter_mean_hu_radiomics')&(boot.successful_folds==5)]
     fig,ax=plt.subplots(figsize=(7.09,3.5)); ax.hist(g.C_index,bins=25,color=GREEN,edgecolor='white'); ax.set_xlabel('Bootstrap full-pipeline cross-validation C-index'); ax.set_ylabel('Patient bootstrap repetitions'); save(fig,'Supplementary_Figure_S5')

@@ -1,0 +1,66 @@
+{
+  "scope": "Actual repaired current secondary adapter; identical Python bytes to newly frozen scientific execution",
+  "files": [
+    {
+      "file": "ORIGINAL_SECONDARY_METHODS_REFERENCE.json",
+      "source_sha256": "dda9b21cf1e1ca695386174052fe39a41d2e8a7c4d24d0085af7e51e4f6e0ca9",
+      "public_sha256": "dda9b21cf1e1ca695386174052fe39a41d2e8a7c4d24d0085af7e51e4f6e0ca9",
+      "byte_identical": true
+    },
+    {
+      "file": "run_new_secondary.py",
+      "source_sha256": "33a764ecef7e1ad458e7ab0ca3b2807f676c0d6e47941e2b91eaba55c8bd017e",
+      "public_sha256": "33a764ecef7e1ad458e7ab0ca3b2807f676c0d6e47941e2b91eaba55c8bd017e",
+      "byte_identical": true
+    },
+    {
+      "file": "run_secondary.py",
+      "source_sha256": "c2cc4b43712561525f3fe89be24c25533fb7a5be3a9b36e27e9db4cf2141a367",
+      "public_sha256": "c2cc4b43712561525f3fe89be24c25533fb7a5be3a9b36e27e9db4cf2141a367",
+      "byte_identical": true
+    },
+    {
+      "file": "secondary_common.py",
+      "source_sha256": "d4cdc579df01f5668f8f170f5c8317e559f2895311361c4850169a67dcdf4ad2",
+      "public_sha256": "d4cdc579df01f5668f8f170f5c8317e559f2895311361c4850169a67dcdf4ad2",
+      "byte_identical": true
+    },
+    {
+      "file": "secondary_metrics.py",
+      "source_sha256": "9558de4a1598c36702875efc97af39db1340d62ff6f6bb2fd669d398898f528a",
+      "public_sha256": "9558de4a1598c36702875efc97af39db1340d62ff6f6bb2fd669d398898f528a",
+      "byte_identical": true
+    },
+    {
+      "file": "summarize_secondary.py",
+      "source_sha256": "15a992c0ee9a292154dd27283aa8902f0062dceb6a146c4829f10c471356d1cc",
+      "public_sha256": "15a992c0ee9a292154dd27283aa8902f0062dceb6a146c4829f10c471356d1cc",
+      "byte_identical": true
+    },
+    {
+      "file": "test_new_adapter.py",
+      "source_sha256": "1b98166ecd85e4809a84f07951b9ceae1f8634491abb2462293d9bfb0d7bc811",
+      "public_sha256": "1b98166ecd85e4809a84f07951b9ceae1f8634491abb2462293d9bfb0d7bc811",
+      "byte_identical": true
+    },
+    {
+      "file": "test_secondary.py",
+      "source_sha256": "db822197d40d7542396205e8c4c1d7cd26c8bd8659e86aa3ba4c3e3d9480032a",
+      "public_sha256": "db822197d40d7542396205e8c4c1d7cd26c8bd8659e86aa3ba4c3e3d9480032a",
+      "byte_identical": true
+    }
+  ],
+  "secondary_code_sha256": "f10e262d8b2b49adc31e4f51018a8f0f788c7b4d120bcff14db6b49e9a2f5ea4",
+  "old118_results_included": false,
+  "requires_new_current_run_checkpoint_bodies": true,
+  "repair": "Explicit HERE insertion on sys.path for locked embeddable CPython isolation; statistical function AST unchanged",
+  "changed_source_files": [
+    "run_new_secondary.py",
+    "test_new_adapter.py"
+  ],
+  "additional_public_arithmetic_helper": {
+    "file": "verify_reference_arithmetic.py",
+    "sha256": "4f865db18a651b60978bb4f883906de56238a355adc6a397823d170eafd8145d",
+    "scope": "Paired-table arithmetic only; no model or coefficient fitting"
+  }
+}

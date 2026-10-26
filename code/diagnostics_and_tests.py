@@ -68,4 +68,17 @@ def main():
     pd.DataFrame(corr).to_csv(OUT/'SIZE_INTENSITY_COLLINEARITY.csv',index=False)
     (OUT/'final_analysis_summary.json').write_text(json.dumps(summary,indent=2,allow_nan=True),encoding='utf-8'); print(summary,flush=True)
 
-if __name__=='__main__': main()
+if __name__=='__main__':
+    try:
+        from run_new_cohort import require_frozen_model_inputs
+        require_frozen_model_inputs(ROOT.parent)
+        main()
+    except Exception as exc:
+        import traceback, datetime
+        OUT.mkdir(parents=True, exist_ok=True)
+        with (OUT/'FINAL_DEVELOPMENT_ENTRY_FAILURES.jsonl').open('a',encoding='utf-8') as handle:
+            handle.write(json.dumps(dict(status='FAILED_OR_BLOCKED',
+                utc=datetime.datetime.now(datetime.timezone.utc).isoformat(),
+                scope='final_development_entry',exception_type=type(exc).__name__,exception=str(exc),
+                traceback=traceback.format_exc()),ensure_ascii=False)+'\n')
+        raise

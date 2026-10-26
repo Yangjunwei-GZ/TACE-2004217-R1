@@ -1,0 +1,3 @@
+# Checkpoint scope
+
+This public candidate omits original checkpoint bodies. First generate a new complete primary run with the matrix or official-CT entry, then supply that run and the exact public code directory to the secondary freeze/compute/audit commands. A new source fingerprint is recorded for this reproduction. Published numerical reference tables, once attached, support direct arithmetic checks but do not replace full model redevelopment. The historical methods JSON is a definition reference only; its old matrix fingerprints and support are overridden by a new explicit freeze and are never current-run evidence.

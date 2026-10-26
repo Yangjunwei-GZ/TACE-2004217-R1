@@ -1,0 +1,45 @@
+{
+  "scope": "Public compatibility table explanatory metadata only; no source-file or scientific-value modification",
+  "before_public_sha256": "ff99b4fde6c80e2840018b801bab5e808d00a596c97d0be74d4f8dddeca2ef8e",
+  "after_public_sha256": "4b577941192c6f544a2372c4b33e59e9b9cac43ec3cae00eda7aaf575f3ce6e9",
+  "changed_fields": [
+    {
+      "patient_id": "83",
+      "field": "current_medical_work_attribution",
+      "before": "Physician, per author clarification; original machine-execution record unchanged",
+      "after": "Author input adoption; prior physician phase correction; no new physician contour decision"
+    },
+    {
+      "patient_id": "83",
+      "field": "recorded_eligibility_decision_reason",
+      "before": "医生完成的影像QC后未使用（作者于2026-10-21更正归属）：明确记录为无法确定期相，无法证实目标动脉期；研究排除而非改判非动脉期。；来源记录：SOURCE_PROJECT_PATH",
+      "after": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。"
+    },
+    {
+      "patient_id": "83",
+      "field": "correction_date",
+      "before": "2026-10-21",
+      "after": "2026-10-26"
+    },
+    {
+      "patient_id": "94",
+      "field": "current_medical_work_attribution",
+      "before": "Physician, per author clarification; original machine-execution record unchanged",
+      "after": "Author input adoption; prior physician phase correction; no new physician contour decision"
+    },
+    {
+      "patient_id": "94",
+      "field": "recorded_eligibility_decision_reason",
+      "before": "医生完成的影像QC后未使用（作者于2026-10-21更正归属）：明确记录为无法确定期相，无法证实目标动脉期；研究排除而非改判非动脉期。；来源记录：SOURCE_PROJECT_PATH",
+      "after": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。"
+    },
+    {
+      "patient_id": "94",
+      "field": "correction_date",
+      "before": "2026-10-21",
+      "after": "2026-10-26"
+    }
+  ],
+  "numeric_and_identity_fields_unchanged": true,
+  "historical_pair_counts_and_record_scope_preserved": true
+}

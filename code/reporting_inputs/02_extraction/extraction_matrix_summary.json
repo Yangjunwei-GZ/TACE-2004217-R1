@@ -1,11 +1,13 @@
 {
-  "n_patients": 118,
-  "events": 83,
+  "n_patients": 120,
+  "events": 85,
   "censored": 35,
-  "n_lesions": 202,
+  "n_lesions": 210,
   "features": 107,
-  "reproduction_pass": false,
+  "reproduction_pass": true,
   "selection_changed": 0,
   "extraction_failed": 0,
-  "phase": 1
+  "phase": 1,
+  "cache_reuse": true,
+  "new_extraction_performed": false
 }

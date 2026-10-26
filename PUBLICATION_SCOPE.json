@@ -1,0 +1,31 @@
+{
+  "prepared_at": "2026-10-26T22:54:03.527176+08:00",
+  "author_publication_authorization": true,
+  "authorization_scope": "Dedicated reviewed v1.1.0 payload for Yangjunwei-GZ/TACE-2004217-R1; supersedes prior local-only restriction for this payload",
+  "target_repository": "https://github.com/Yangjunwei-GZ/TACE-2004217-R1",
+  "proposed_tag": "v1.1.0",
+  "actual_remote_release_created": false,
+  "anonymous_access_verified": false,
+  "original_v1_0_0_unchanged": true,
+  "authorized_content": [
+    "Analysis/reproduction code and environment",
+    "De-identified public-source derived outcomes and feature matrices",
+    "Frozen lists and filename/hash maps",
+    "17 adopted final masks",
+    "Current verified reference results and checkpoint identity lists"
+  ],
+  "excluded_content": [
+    "Raw CT or DICOM",
+    "Eight original source masks as extra uploads; acquire from official data",
+    "Private physician review forms/signatures",
+    "Internal manuscript/revision documents",
+    "Full local reproducibility archive",
+    "Old or new compressed checkpoint bodies",
+    "Author-machine paths, credentials and test outputs"
+  ],
+  "medical_evidence_status": "INCOMPLETE",
+  "author_input_adoption_is_not_new_physician_confirmation": true,
+  "code_and_input_payload_prepared": true,
+  "current_scientific_results_attachment_pending": false,
+  "submission_ready": false
+}

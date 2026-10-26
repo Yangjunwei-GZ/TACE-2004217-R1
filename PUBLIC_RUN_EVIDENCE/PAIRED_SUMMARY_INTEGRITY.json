@@ -1,0 +1,75 @@
+{
+  "status": "COMPLETE",
+  "scope": "FORMAL_PAIRED_SUMMARY",
+  "issues": [],
+  "recomputed_from_actual_checkpoints": [
+    {
+      "baseline": "clinical",
+      "combined": "clinical_radiomics",
+      "paired_delta_C_index": 0.04135649296939614,
+      "repeat_mean_delta": 0.031581772070732525,
+      "repeat_SD_delta": 0.02423187043851623,
+      "CI_lower": -0.06969506504390224,
+      "CI_upper": 0.11338249996032816,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    },
+    {
+      "baseline": "clinical_diameter",
+      "combined": "clinical_diameter_radiomics",
+      "paired_delta_C_index": -0.005789909015715411,
+      "repeat_mean_delta": -0.004807001400482802,
+      "repeat_SD_delta": 0.007731185212205,
+      "CI_lower": -0.08656663225035502,
+      "CI_upper": 0.05783919417746748,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    },
+    {
+      "baseline": "clinical_selected_volume",
+      "combined": "clinical_selected_volume_radiomics",
+      "paired_delta_C_index": -0.004962779156327479,
+      "repeat_mean_delta": -0.0006940713541844113,
+      "repeat_SD_delta": 0.010228416227068647,
+      "CI_lower": -0.08371499424488549,
+      "CI_upper": 0.05799860791083333,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    },
+    {
+      "baseline": "clinical_total_volume",
+      "combined": "clinical_total_volume_radiomics",
+      "paired_delta_C_index": -0.003308519437551616,
+      "repeat_mean_delta": -0.0046305397275261395,
+      "repeat_SD_delta": 0.010974488099672648,
+      "CI_lower": -0.08272129650132863,
+      "CI_upper": 0.05375619630291458,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    },
+    {
+      "baseline": "clinical_diameter_mean_hu",
+      "combined": "clinical_diameter_mean_hu_radiomics",
+      "paired_delta_C_index": -0.011579818031430933,
+      "repeat_mean_delta": -0.008479998955398704,
+      "repeat_SD_delta": 0.010955543056708773,
+      "CI_lower": -0.08051608944641396,
+      "CI_upper": 0.03963575576919167,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    },
+    {
+      "baseline": "clinical_diameter_p10_hu",
+      "combined": "clinical_diameter_p10_hu_radiomics",
+      "paired_delta_C_index": -0.02067824648469807,
+      "repeat_mean_delta": -0.013581528339018833,
+      "repeat_SD_delta": 0.010706045596841891,
+      "CI_lower": -0.08017497841105353,
+      "CI_upper": 0.039596665451322205,
+      "bootstrap_joint_complete": 500,
+      "point_joint_complete": 10
+    }
+  ],
+  "paired_csv_sha256": "6ca050bbd685bd39acb835bdb73ba27b6d9bf66b44419714b9b7471222c8617e",
+  "validation_plan_sha256": "34a39eabc5baa6ecc75bd6e66c0fb5332cbffd65ce709be0003aa1f2dd998228"
+}

@@ -1,0 +1,27 @@
+{
+  "frozen_at": "2026-10-26T23:37:14.470848+08:00",
+  "plan_sha256": "ab99e30da6e452241536e8dc712e382a7886e651f63204aa3729d33cd94f2a24",
+  "command": [
+    "local_preparation/secondary_code/run_new_secondary.py",
+    "freeze",
+    "--revision",
+    "local_scientific_run/revision_R1_20261014",
+    "--runtime",
+    "executed_model_code",
+    "--output",
+    "local_preparation/audit/secondary_analysis"
+  ],
+  "actual_environment": {
+    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
+    "executable": "locked_cpython31011/python.exe",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "packages": {
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scipy": "1.14.1",
+      "scikit-learn": "1.5.2",
+      "scikit-survival": "0.23.1",
+      "lifelines": "0.30.0"
+    }
+  }
+}

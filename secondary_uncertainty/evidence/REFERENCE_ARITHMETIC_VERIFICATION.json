@@ -1,0 +1,103 @@
+{
+  "status": "PASS_REFERENCE_ARITHMETIC_ONLY",
+  "summary_rows": 13,
+  "paired_rows": 6500,
+  "per_run_rows": 13260,
+  "NA_model_endpoint_rows": 64,
+  "details": [
+    {
+      "metric": "AUC",
+      "time": "12",
+      "joint_evaluable": 480,
+      "NA": 20,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Brier",
+      "time": "12",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "AUC",
+      "time": "24",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Brier",
+      "time": "24",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "AUC",
+      "time": "36",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Brier",
+      "time": "36",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "IBS",
+      "time": "IBS_1_36",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_unweighted",
+      "time": "12",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_n_weighted",
+      "time": "12",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_unweighted",
+      "time": "24",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_n_weighted",
+      "time": "24",
+      "joint_evaluable": 500,
+      "NA": 0,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_unweighted",
+      "time": "36",
+      "joint_evaluable": 489,
+      "NA": 11,
+      "CI_status": "estimated"
+    },
+    {
+      "metric": "Calibration_MAE_n_weighted",
+      "time": "36",
+      "joint_evaluable": 489,
+      "NA": 11,
+      "CI_status": "estimated"
+    }
+  ],
+  "model_training_performed": false,
+  "original_checkpoint_bodies_required_for_this_arithmetic_check": false,
+  "scope": "Checks numerical intervals from current reference records; does not reproduce full model development"
+}

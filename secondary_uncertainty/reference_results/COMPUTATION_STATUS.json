@@ -1,0 +1,13 @@
+{
+  "status": "COMPUTED_PENDING_INDEPENDENT_QA",
+  "started_at": "2026-10-26T23:38:53.232540+08:00",
+  "finished_at": "2026-10-26T23:43:54.980182+08:00",
+  "planned": 510,
+  "attempted": 510,
+  "successful": 510,
+  "failed": 0,
+  "coefficient_refits": 0,
+  "feature_selection_refits": 0,
+  "fitted_baselines_reused": 5100,
+  "independent_fixed_beta_baseline_checks": 5100
+}

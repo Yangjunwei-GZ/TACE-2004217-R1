@@ -1,0 +1,7 @@
+{
+  "source_plan_sha256": "ab99e30da6e452241536e8dc712e382a7886e651f63204aa3729d33cd94f2a24",
+  "public_plan_sha256": "0350058305a37d2322b3ba93c4d61eed5d18b9d100977009c79a26291ddb14f7",
+  "source_record_sha256": "4993e1326c6f83b4a006e87a4d64b0db4f75708df03d7bea795c86bca8153417",
+  "transformation": "Only author-machine paths relocated; scientific plan values, date and original fingerprint fields preserved",
+  "secondary_code_sha256": "f10e262d8b2b49adc31e4f51018a8f0f788c7b4d120bcff14db6b49e9a2f5ea4"
+}

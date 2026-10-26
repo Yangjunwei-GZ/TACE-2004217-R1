@@ -1,0 +1,22 @@
+{
+  "scope": "Actual secondary startup failure, separate from primary validation attempts and statistical NA",
+  "events": [
+    {
+      "time": "2026-10-26T23:35:00.213277+08:00",
+      "status": "FAILED",
+      "exception_type": "ModuleNotFoundError",
+      "exception": "No module named 'secondary_common'",
+      "previous_outputs_preserved": true
+    }
+  ],
+  "entry_failure_events": 1,
+  "archived_original_entry_failures_sha256": "f72b1d06a33e9721a24667419fb72670c12324cd027b1409f58b12a35e92f3ce",
+  "old_freeze_retained": true,
+  "old_plan_sha256": "1964b5916108c72e6ba3c26b68175da60e2cae01082141ef920aa56835f3914f",
+  "new_plan_sha256": "ab99e30da6e452241536e8dc712e382a7886e651f63204aa3729d33cd94f2a24",
+  "new_plan_frozen_at": "2026-10-26T23:37:14.456095+08:00",
+  "repair": "Add script directory to sys.path before helper imports; new actual freeze before secondary computation",
+  "statistical_rules_changed": false,
+  "original_or_new_primary_checkpoints_changed": false,
+  "whole_project_zero_exception_claim": false
+}

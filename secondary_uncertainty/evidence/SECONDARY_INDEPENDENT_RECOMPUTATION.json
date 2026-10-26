@@ -1,0 +1,19 @@
+{
+  "status": "STATISTICS_COMPLETE_AUTOMATED_QA",
+  "verified_at": "2026-10-26T23:44:05.951709+08:00",
+  "patients": 120,
+  "events": 85,
+  "planned": 510,
+  "attempted": 510,
+  "successful": 510,
+  "failed": 0,
+  "coefficient_refits_in_secondary_stage": 0,
+  "regression_refits_in_secondary_stage": 0,
+  "fitted_baselines_reused": 5100,
+  "interval_rows": 13,
+  "intervals_estimable": 13,
+  "not_reliably_estimable": 0,
+  "NA_model_endpoint_rows": 64,
+  "source_hashes_unchanged": true,
+  "note": "Automated numerical and integrity audit; report limitations and every NA denominator. This certificate does not assert external validation or scientific benefit."
+}

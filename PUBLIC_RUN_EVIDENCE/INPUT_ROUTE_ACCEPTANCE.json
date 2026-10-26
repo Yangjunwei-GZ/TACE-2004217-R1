@@ -1,0 +1,55 @@
+{
+  "actual_raw_source_preflight": {
+    "status": "PASS_RAW_SOURCE_PREFLIGHT_NOT_EXTRACTION",
+    "patients": 120,
+    "active_ROIs": 210,
+    "final_masks_applied": 17,
+    "model_fits": 0
+  },
+  "cached_feature_matrix_construction": {
+    "status": "PASS_CACHED_FEATURE_MATRIX_CONSTRUCTION_ONLY",
+    "checked_at": "2026-10-26T22:18:26.729151+08:00",
+    "source_resolution": "Actual official-source CT/mask hashes and17 packaged final masks checked",
+    "patients": 120,
+    "active_ROIs": 210,
+    "comparisons": {
+      "matrix": {
+        "rows": 120,
+        "columns": 182,
+        "max_absolute_error": 2.9802322387695312e-08,
+        "max_relative_error": 6.82419642748146e-13,
+        "atol": 1e-08,
+        "rtol": 1e-10,
+        "row_order_and_IDs_identical": true,
+        "ignored_relocated_columns": [
+          "ct_path",
+          "mask_path"
+        ]
+      },
+      "features": {
+        "rows": 210,
+        "columns": 116,
+        "max_absolute_error": 2.9802322387695312e-08,
+        "max_relative_error": 6.82419642748146e-13,
+        "atol": 1e-08,
+        "rtol": 1e-10,
+        "row_order_and_IDs_identical": true,
+        "ignored_relocated_columns": [
+          "ct_path",
+          "mask_path"
+        ]
+      }
+    },
+    "public_execution_gate": "PASS_AUTHOR_SPECIFIED_INPUTS_NOT_PHYSICIAN_APPROVAL",
+    "new_feature_extractions": 0,
+    "model_fits": 0,
+    "old_checkpoints_copied": 0,
+    "distinction": "Feature cache and original masks test matrix aggregation; this is not a fresh107-feature extraction acceptance run",
+    "public_matrix_sha256": "7a691b776cc63a3d8e0695df392778408f93da502b838ec0f074717116adf3cb",
+    "reconstructed_matrix_sha256": "8df51da409a2a9ea026d76770632d0c8d9f18f8560f36a420fe9cf4b63e70c87",
+    "medical_evidence_status": "INCOMPLETE",
+    "submission_ready": false
+  },
+  "new_feature_extractions": 0,
+  "new_model_fits": 0
+}

@@ -1,0 +1,83 @@
+{
+  "status": "PASS",
+  "checked_at": "2026-10-26T22:37:06.917927+08:00",
+  "scope": "Static scientific function AST equality; not runtime performance evidence",
+  "checks": [
+    {
+      "file": "validate_pipeline.py",
+      "compared_functions": 14,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "5ab01b42e923c1e9af48ce354dd906426593482206ad4f5c624e7351e23fe188",
+      "public_sha256": "e2f521cb22e9ef4947f27e040bb89612f07cfe369832735e7d366e0d8375fdfe"
+    },
+    {
+      "file": "diagnostics_and_tests.py",
+      "compared_functions": 1,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "51f1aa70bcaca87f46a4fce1fe6c7a2c8ee45bd72de1c1b2fbbd47d1454b528a",
+      "public_sha256": "9b5c2c6640bf653f3104e1a81d7d4d2ecd96946d73d51169ba93ce025799667b"
+    },
+    {
+      "file": "validation_integrity.py",
+      "compared_functions": 19,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "b4469aaad1901f923136fdaf026f62421d696a3fe590241033b09384a73afc45",
+      "public_sha256": "01b02039b8636dc8db4512d5986f63d6ebd2061edc4d940a2614bc47e0362248"
+    },
+    {
+      "file": "validation_execution.py",
+      "compared_functions": 1,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "e136bdb7ce0ffe73b184541be624056e50a29a6be02a36f246e934b2b52df4c6",
+      "public_sha256": "3f118bbb1b9ec2a5cee6aa571b3a8d787052b0961b6d576ae355ac21fb2ceac3"
+    },
+    {
+      "file": "survival_evidence.py",
+      "compared_functions": 4,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "f7e3bb7df7285f6ccb6a198b71da6f2c31776d2a9ffdd37c18a21a8877307232",
+      "public_sha256": "ebd6907d74c6c9bad8a4bdf64746eb82222ec22bfb91fce8b2577ded8b854e6e"
+    },
+    {
+      "file": "analysis_input_guard.py",
+      "compared_functions": 11,
+      "unchanged": true,
+      "excluded_adapter_functions": [],
+      "executed_sha256": "5add0b908919e67179b2c79e954843e72f87f295e699330f4b2008cda08aa103",
+      "public_sha256": "5a4192b4cbf51d27b9999421a59041f1bcfae22cdb6e8199772bc185bd6cb8e0"
+    },
+    {
+      "file": "run_new_cohort.py",
+      "compared_functions": 10,
+      "unchanged": true,
+      "excluded_adapter_functions": [
+        "decision_path"
+      ],
+      "executed_sha256": "974d99981144b41dbc2537561a944a80b8a3406b0dba126170540adfdcc9455d",
+      "public_sha256": "f7ade714319e4fd4ba5f70803da5498cf5fcaf628fce4dc8434db016fea87795"
+    },
+    {
+      "file": "extract_matrix.py",
+      "compared_functions": 2,
+      "unchanged": true,
+      "functions": [
+        "extractor",
+        "execute"
+      ]
+    }
+  ],
+  "model_fits": 0,
+  "intentional_adapters": [
+    "Public author-adoption path inside new run",
+    "Default project paths",
+    "Raw reconstruction restored to frozen patient order",
+    "Metadata provenance comparison for fresh extraction",
+    "Explicit incomplete medical/secondary/submission status",
+    "Corrected report attribution"
+  ]
+}

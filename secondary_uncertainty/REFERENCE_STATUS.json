@@ -1,0 +1,204 @@
+{
+  "status": "CURRENT_SECONDARY_REFERENCES_VERIFIED",
+  "verified_at": "2026-10-26T23:49:56.581645+08:00",
+  "actual_computation": {
+    "status": "STATISTICS_COMPLETE_AUTOMATED_QA",
+    "verified_at": "2026-10-26T23:44:05.951709+08:00",
+    "patients": 120,
+    "events": 85,
+    "planned": 510,
+    "attempted": 510,
+    "successful": 510,
+    "failed": 0,
+    "coefficient_refits_in_secondary_stage": 0,
+    "regression_refits_in_secondary_stage": 0,
+    "fitted_baselines_reused": 5100,
+    "interval_rows": 13,
+    "intervals_estimable": 13,
+    "not_reliably_estimable": 0,
+    "NA_model_endpoint_rows": 64,
+    "source_hashes_unchanged": true,
+    "note": "Automated numerical and integrity audit; report limitations and every NA denominator. This certificate does not assert external validation or scientific benefit."
+  },
+  "current_matrix_sha256": "66f9302564f4e5e7ca3d7d0a968871133c5a7c296c76d2fcd4ea2b33f77545c0",
+  "source_plan_sha256": "ab99e30da6e452241536e8dc712e382a7886e651f63204aa3729d33cd94f2a24",
+  "actual_secondary_code_sha256": "f10e262d8b2b49adc31e4f51018a8f0f788c7b4d120bcff14db6b49e9a2f5ea4",
+  "checkpoint_identities_match_current_main": true,
+  "reference_files": [
+    {
+      "file": "reference_results/uncertainty_summary.csv",
+      "source_sha256": "546d5b86f5342265ca8ebf7022ed72bd128b51d31d7ee8d1b2646b4b1a653ad0",
+      "public_sha256": "546d5b86f5342265ca8ebf7022ed72bd128b51d31d7ee8d1b2646b4b1a653ad0",
+      "bytes": 5324
+    },
+    {
+      "file": "reference_results/paired_bootstrap_metrics.csv",
+      "source_sha256": "81fec10a209e3765a9f396168e6f58f5187443cb098af8098dd313d3f9e49ff4",
+      "public_sha256": "81fec10a209e3765a9f396168e6f58f5187443cb098af8098dd313d3f9e49ff4",
+      "bytes": 621700
+    },
+    {
+      "file": "reference_results/run_metrics.csv",
+      "source_sha256": "e86a97a8729eb0894b1ede7e4546d2f79b8fe2a9b0c6814595ca08380cb3a6fc",
+      "public_sha256": "e86a97a8729eb0894b1ede7e4546d2f79b8fe2a9b0c6814595ca08380cb3a6fc",
+      "bytes": 1269577
+    },
+    {
+      "file": "reference_results/point0_calibration_with_KM_CI.csv",
+      "source_sha256": "c1a698ac84d0dae8ce8eba066ed86776d3607fa00ed9ee761c28f50aa9c7dc89",
+      "public_sha256": "c1a698ac84d0dae8ce8eba066ed86776d3607fa00ed9ee761c28f50aa9c7dc89",
+      "bytes": 6414
+    },
+    {
+      "file": "reference_results/NON_EVALUABLE_RUNS.csv",
+      "source_sha256": "db93c07ef0f5719628a0e996ee3c5864553cbdfa3ebc89e1fd65692e22c7830d",
+      "public_sha256": "db93c07ef0f5719628a0e996ee3c5864553cbdfa3ebc89e1fd65692e22c7830d",
+      "bytes": 6294
+    },
+    {
+      "file": "reference_results/NON_EVALUABLE_REASON_COUNTS.csv",
+      "source_sha256": "78eb4d0cf697a9f676adc16b7748242651f109676cc13215e5fb3bac2f0a3aa2",
+      "public_sha256": "78eb4d0cf697a9f676adc16b7748242651f109676cc13215e5fb3bac2f0a3aa2",
+      "bytes": 619
+    },
+    {
+      "file": "reference_results/task_ledger.csv",
+      "source_sha256": "5959875b7e65376054458cc3d53cbcec5a1fa3ecbe6f207a0490bb48cc130b4b",
+      "public_sha256": "5959875b7e65376054458cc3d53cbcec5a1fa3ecbe6f207a0490bb48cc130b4b",
+      "bytes": 193555
+    },
+    {
+      "file": "reference_results/COMPUTATION_STATUS.json",
+      "source_sha256": "c1f7be95088c7ce1b4d6f6f82fb562830bac0a8ec3af95e533cd64de4fc6d8f7",
+      "public_sha256": "c1f7be95088c7ce1b4d6f6f82fb562830bac0a8ec3af95e533cd64de4fc6d8f7",
+      "bytes": 385
+    },
+    {
+      "file": "reference_results/STATISTICS_COMPLETE.json",
+      "source_sha256": "1d508e1bbf8125f62dbecbe0a8c117b96e03977f9b570c1b836264deb1ec6c56",
+      "public_sha256": "1d508e1bbf8125f62dbecbe0a8c117b96e03977f9b570c1b836264deb1ec6c56",
+      "bytes": 681
+    },
+    {
+      "file": "reference_results/fold_metrics.csv.gz",
+      "source_sha256": "65f9fd7f449b556584bb172ba5981b99a196868396872a5e634fa545a2e9e893",
+      "public_sha256": "65f9fd7f449b556584bb172ba5981b99a196868396872a5e634fa545a2e9e893",
+      "bytes": 2407487
+    },
+    {
+      "file": "reference_results/calibration_group_details.csv.gz",
+      "source_sha256": "6e3ec89985890f27401aa7b485a425011680e40300da08856f6e67c06ba8a277",
+      "public_sha256": "6e3ec89985890f27401aa7b485a425011680e40300da08856f6e67c06ba8a277",
+      "bytes": 737050
+    }
+  ],
+  "independent_public_reference_arithmetic": {
+    "status": "PASS_REFERENCE_ARITHMETIC_ONLY",
+    "summary_rows": 13,
+    "paired_rows": 6500,
+    "per_run_rows": 13260,
+    "NA_model_endpoint_rows": 64,
+    "details": [
+      {
+        "metric": "AUC",
+        "time": "12",
+        "joint_evaluable": 480,
+        "NA": 20,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Brier",
+        "time": "12",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "AUC",
+        "time": "24",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Brier",
+        "time": "24",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "AUC",
+        "time": "36",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Brier",
+        "time": "36",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "IBS",
+        "time": "IBS_1_36",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_unweighted",
+        "time": "12",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_n_weighted",
+        "time": "12",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_unweighted",
+        "time": "24",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_n_weighted",
+        "time": "24",
+        "joint_evaluable": 500,
+        "NA": 0,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_unweighted",
+        "time": "36",
+        "joint_evaluable": 489,
+        "NA": 11,
+        "CI_status": "estimated"
+      },
+      {
+        "metric": "Calibration_MAE_n_weighted",
+        "time": "36",
+        "joint_evaluable": 489,
+        "NA": 11,
+        "CI_status": "estimated"
+      }
+    ],
+    "model_training_performed": false,
+    "original_checkpoint_bodies_required_for_this_arithmetic_check": false,
+    "scope": "Checks numerical intervals from current reference records; does not reproduce full model development"
+  },
+  "original_checkpoint_bodies_included": false,
+  "private_patient_prediction_details_included": false,
+  "startup_failure_history": "SECONDARY_STARTUP_FAILURE_HISTORY.json",
+  "coefficient_refits_performed": 0,
+  "medical_evidence_status": "INCOMPLETE",
+  "submission_ready": false
+}

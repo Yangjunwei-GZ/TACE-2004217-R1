@@ -1,0 +1,12 @@
+{
+  "scope": "Historical failed first attempt of this new cohort; not discarded or reused as successful science",
+  "planned_point_tasks": 10,
+  "attempted_point_tasks": 10,
+  "failed_point_tasks": 10,
+  "reason": "Strict equality rejected CSV/pandas binary64 parsing differences up to 1.4210854715202004e-14 months. Fixed audit tolerance only; no clinical value, fit, seed or scientific rule changed.",
+  "maximum_training_time_parse_difference_months": 1.4210854715202004e-14,
+  "repair": "Same-shape finite training times compared with rtol0/atol1e-12; patient IDs/events remain exact",
+  "original_seeds_reused": true,
+  "archived_checkpoint_bodies_public": false,
+  "source_archive_index_sha256": "2112d38d9d3d51e8ea7c72877d58c1034b38dce03a6dd94fe2b81b72b71616d2"
+}

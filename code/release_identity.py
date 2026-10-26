@@ -2,8 +2,8 @@
 from pathlib import Path
 import hashlib,json
 PACKAGE=Path(__file__).resolve().parent.parent
-EXPECTED_RELEASE_MANIFEST_SHA256='c1af5ab2699fef1d22bd2b08f5475b4f20a9526a68eac028f72e1bf506c408db'
-RELEASE_VERSION='local-input-route-fix-20261022-r2'
+EXPECTED_RELEASE_MANIFEST_SHA256='2af42a767a921ecb92f1390315c91bd9a5e0b7112635c10269f1422b53664ebd'
+RELEASE_VERSION='v1.1.0'
 def verify_release(package=None):
  root=Path(package) if package is not None else PACKAGE;p=root/'RELEASE_INPUTS.json'
  if not p.is_file():raise FileNotFoundError('Missing pinned release input manifest')

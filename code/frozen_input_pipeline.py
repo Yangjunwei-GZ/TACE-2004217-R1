@@ -160,7 +160,7 @@ def verify_bindings(binding):
 def verify_outputs(root,raw):
  root=Path(root);rev=root/REVISION;protocol=json.loads((PACKAGE/'frozen_inputs/NUMERICAL_COMPARISON_PROTOCOL.json').read_text())
  atol=protocol['feature_and_matrix_atol'] if raw else 0;rtol=protocol['feature_and_matrix_rtol'] if raw else 0;comparisons={}
- for name,ref,actual in [('features',PACKAGE/'code/reporting_inputs/02_extraction/arterial_lesion_features.csv',rev/'02_extraction/arterial_lesion_features.csv'),('matrix',PACKAGE/'code/data/analysis_matrix.csv',rev/'03_model_development/analysis_matrix.csv')]:comparisons[name]=compare_csv(ref,actual,atol,rtol)
+ for name,ref,actual in [('features',PACKAGE/'code/reporting_inputs/02_extraction/arterial_lesion_features.csv',rev/'02_extraction/arterial_lesion_features.csv'),('matrix',PACKAGE/'code/data/analysis_matrix.csv',rev/'03_model_development/analysis_matrix.csv')]:comparisons[name]=compare_csv(ref,actual,atol,rtol,ignore=('ct_path','mask_path','feature_provenance') if raw else ('ct_path','mask_path'))
  audit=verify_analysis_inputs(root,verify_image_hashes=raw)
  dump(root/'INPUT_REPRODUCTION_COMPARISON.json',{'status':'PASS','route':'raw' if raw else 'matrix','comparisons':comparisons,'new_model_fits':0,'features_reextracted':raw})
  dump(root/'INPUT_PREFLIGHT.json',{'status':'PASS_EXTRACTED_INPUTS' if raw else 'PASS_FROZEN_MATRIX_INPUTS','patients':audit['actual_patient_count'],'active_ROIs':audit['actual_active_unique_mask_count'],'model_fits':0})

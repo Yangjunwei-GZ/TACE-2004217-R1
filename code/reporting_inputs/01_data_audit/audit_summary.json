@@ -12,21 +12,21 @@
   },
   "correctly_paired": 341,
   "DICOM_files": 0,
-  "eligible_arterial_patients": 118,
-  "eligible_arterial_events": 83,
-  "active_analysis_ROI_records": 202,
+  "eligible_arterial_patients": 120,
+  "eligible_arterial_events": 85,
+  "active_analysis_ROI_records": 210,
   "source_arterial_candidates": 126,
   "source_arterial_ROI_records": 230,
   "exclusion_counts": {
-    "Included": 118,
+    "Included": 120,
     "No source arterial-phase tumour mask": 107,
     "Delayed phase": 1,
-    "Indeterminate phase": 2,
     "No valid ROI": 5
   },
-  "independent_radiologist_review": "Existing review records retained; author clarification dated 2026-10-21 assigns subsequent 57 QC items and 17 masks to physician, without establishing new independence or dates",
-  "metadata_scope": "Derived consolidation metadata, not new fitting or rewritten historical run record",
-  "metadata_updated_date": "2026-10-21",
+  "independent_radiologist_review": "Previously author-confirmed physician57-item QC/17-mask work retained. Eight additional source-mask research inputs adopted by author; no new independent physician boundary or lesion-identity evidence supplied.",
+  "metadata_scope": "Current input-derived counts; no model fitting and no backdated physician certification",
+  "metadata_updated_date": "2026-10-26",
   "original_snapshot_sha256": "582d287d186c482aabe1b66d4e40c8d0ae85330782156d0a3bcc70a154cff532",
-  "scientific_matrix_sha256": "75ceb3fdd9f77831c2a2845b20e409054928bfd6885792a4a3111b33a824b183"
+  "scientific_matrix_sha256": "66f9302564f4e5e7ca3d7d0a968871133c5a7c296c76d2fcd4ea2b33f77545c0",
+  "public_matrix_sha256": "7a691b776cc63a3d8e0695df392778408f93da502b838ec0f074717116adf3cb"
 }

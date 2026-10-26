@@ -1,0 +1,30 @@
+{
+  "n": 120,
+  "events": 85,
+  "censored": 35,
+  "phase": "arterial",
+  "lesions": 210,
+  "median_KM_OS": 28.878850102669404,
+  "median_reverse_KM_followup": 55.58932238193019,
+  "observed_followup_range": [
+    0.2628336755646817,
+    106.87474332648873
+  ],
+  "final_kind": "top_two_cox",
+  "final_penalty": 1.0,
+  "features": [
+    "original_glszm_SizeZoneNonUniformity",
+    "original_glszm_LargeAreaHighGrayLevelEmphasis"
+  ],
+  "score_offset": 0.0,
+  "apparent_radiomics_C": 0.6306764052080025,
+  "apparent_KM": {
+    "cutoff": -0.09096521634750994,
+    "high_n": 60,
+    "low_n": 60,
+    "HR": 1.6829810690973155,
+    "CI_lower": 1.092477191898276,
+    "CI_upper": 2.59266307795255,
+    "logrank_P": 0.01695104067649659
+  }
+}

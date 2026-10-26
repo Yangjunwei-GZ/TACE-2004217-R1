@@ -1,7 +1,0 @@
-﻿mode,feature,selected_fits,total_fits,percent
-point,original_glszm_SizeZoneNonUniformity,30,50,60.0
-point,original_glszm_LargeAreaHighGrayLevelEmphasis,25,50,50.0
-point,both_selected,25,50,50.0
-bootstrap,original_glszm_SizeZoneNonUniformity,771,2500,30.84
-bootstrap,original_glszm_LargeAreaHighGrayLevelEmphasis,457,2500,18.279999999999998
-bootstrap,both_selected,295,2500,11.799999999999999

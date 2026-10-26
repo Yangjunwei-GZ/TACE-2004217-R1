@@ -1,0 +1,11 @@
+{
+  "status": "PASS_INDEPENDENT_CURRENT_DATA_REFERENCE_CHECK",
+  "checked_at": "2026-10-26T23:46:20.769707+08:00",
+  "matrix_sha256": "66f9302564f4e5e7ca3d7d0a968871133c5a7c296c76d2fcd4ea2b33f77545c0",
+  "point0_A_B_fold_time_pairs_checked": 30,
+  "reference_metrics": "scikit-survival brier_score and cumulative_dynamic_auc; administrative censoring strictly after 36 months preserves horizon cases/controls",
+  "point0_grouped_KM_CI_checked_with_lifelines": 30,
+  "paired_endpoint_denominators_and_manual_linear_percentiles_checked": 13,
+  "new_regression_fits": 0,
+  "source_certificate_sha256": "1d508e1bbf8125f62dbecbe0a8c117b96e03977f9b570c1b836264deb1ec6c56"
+}

@@ -25,9 +25,9 @@ class PublicInputTests(unittest.TestCase):
  def test_matrix_entry_from_other_cwd_and_spaces(self):
   cwd=self.root/'different working directory';cwd.mkdir();dest=self.root/'actual matrix input run'
   r=subprocess.run([sys.executable,'-B',str(self.copy/'code/run_revision.py'),'--from-matrix','--preflight-only','--project-root',str(dest)],cwd=cwd,capture_output=True,text=True)
-  self.assertEqual(r.returncode,0,r.stderr);d=json.loads((dest/'INPUT_PREFLIGHT.json').read_text());self.assertEqual((d['patients'],d['active_ROIs']),(118,202));self.assertFalse((dest/'ANALYSIS_COMPLETE_AWAITING_DOCUMENT_SYNC.json').exists())
+  self.assertEqual(r.returncode,0,r.stderr);d=json.loads((dest/'INPUT_PREFLIGHT.json').read_text());self.assertEqual((d['patients'],d['active_ROIs']),(120,210));self.assertFalse((dest/'ANALYSIS_COMPLETE_AWAITING_DOCUMENT_SYNC.json').exists())
  def test_rosters_and_17_final_masks(self):
-  im,rp,cp,mp=verify_rosters(self.copy);self.assertEqual((len(im),len(rp),len(cp)),(230,118,126));self.assertEqual(sum(x['final_mask_kind']=='packaged_final' for x in mp),17)
+  im,rp,cp,mp=verify_rosters(self.copy);self.assertEqual((len(im),len(rp),len(cp)),(230,120,126));self.assertEqual(sum(x['final_mask_kind']=='packaged_final' for x in mp),17)
  def test_missing_final_mask_rejected(self):
   next((self.copy/'final_masks').glob('*.nrrd')).unlink()
   with self.assertRaises(ValueError):verify_rosters(self.copy)

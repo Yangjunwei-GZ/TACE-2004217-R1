@@ -1,0 +1,86 @@
+{
+  "scope": "New-current-run scientific algorithms with portable file/gate/reporting adapters",
+  "source_run_identifier": "TACE_Author_Input_Reanalysis_20261026_214556",
+  "files": [
+    {
+      "file": "analysis_input_guard.py",
+      "executed_code_sha256": "5add0b908919e67179b2c79e954843e72f87f295e699330f4b2008cda08aa103",
+      "public_code_sha256": "5a4192b4cbf51d27b9999421a59041f1bcfae22cdb6e8199772bc185bd6cb8e0",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "file": "diagnostics_and_tests.py",
+      "executed_code_sha256": "51f1aa70bcaca87f46a4fce1fe6c7a2c8ee45bd72de1c1b2fbbd47d1454b528a",
+      "public_code_sha256": "9b5c2c6640bf653f3104e1a81d7d4d2ecd96946d73d51169ba93ce025799667b",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "file": "ph_global.R",
+      "executed_code_sha256": "4a8b80a1b82b8a841e94e3092892f941a4e9392e7466ce45f66861814c874d57",
+      "public_code_sha256": "9177de8546f4ebfa31b062272bbf316990f6ed7831e142b24028b9c67291d6a5",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "file": "publication_data.py",
+      "executed_code_sha256": "7e7a6616e319f27e935848094d0b6259e8c08da7075c7ca96d4df5859f9e1036",
+      "public_code_sha256": "d97f23f4ed621e66d18f70c52df8ed1ecc34956f78b627d095f1ded8daa9074b",
+      "byte_identical": false,
+      "changes": [
+        "Default machine path replaced by current directory; explicit TACE_PROJECT_ROOT respected"
+      ]
+    },
+    {
+      "file": "publication_figures.py",
+      "executed_code_sha256": "bd85f789485f62046be081f774a31116f26e43f3c6d92ad05562b1e55e1601e7",
+      "public_code_sha256": "edf8d357f1bc1a5390c33c00b98c0c2de1188ba4f4dd6bfe779425b0b85f7b1f",
+      "byte_identical": false,
+      "changes": [
+        "Default machine path replaced by current directory; explicit TACE_PROJECT_ROOT respected",
+        "Correct physician vs author input-adoption attribution; no model or numerical change"
+      ]
+    },
+    {
+      "file": "run_new_cohort.py",
+      "executed_code_sha256": "974d99981144b41dbc2537561a944a80b8a3406b0dba126170540adfdcc9455d",
+      "public_code_sha256": "f7ade714319e4fd4ba5f70803da5498cf5fcaf628fce4dc8434db016fea87795",
+      "byte_identical": false,
+      "changes": [
+        "Decision summary located within new public run; no private physician files required"
+      ]
+    },
+    {
+      "file": "survival_evidence.py",
+      "executed_code_sha256": "f7e3bb7df7285f6ccb6a198b71da6f2c31776d2a9ffdd37c18a21a8877307232",
+      "public_code_sha256": "ebd6907d74c6c9bad8a4bdf64746eb82222ec22bfb91fce8b2577ded8b854e6e",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "file": "validate_pipeline.py",
+      "executed_code_sha256": "5ab01b42e923c1e9af48ce354dd906426593482206ad4f5c624e7351e23fe188",
+      "public_code_sha256": "e2f521cb22e9ef4947f27e040bb89612f07cfe369832735e7d366e0d8375fdfe",
+      "byte_identical": false,
+      "changes": [
+        "Default machine path replaced by current directory; explicit TACE_PROJECT_ROOT respected"
+      ]
+    },
+    {
+      "file": "validation_execution.py",
+      "executed_code_sha256": "e136bdb7ce0ffe73b184541be624056e50a29a6be02a36f246e934b2b52df4c6",
+      "public_code_sha256": "3f118bbb1b9ec2a5cee6aa571b3a8d787052b0961b6d576ae355ac21fb2ceac3",
+      "byte_identical": true,
+      "changes": []
+    },
+    {
+      "file": "validation_integrity.py",
+      "executed_code_sha256": "b4469aaad1901f923136fdaf026f62421d696a3fe590241033b09384a73afc45",
+      "public_code_sha256": "01b02039b8636dc8db4512d5986f63d6ebd2061edc4d940a2614bc47e0362248",
+      "byte_identical": true,
+      "changes": []
+    }
+  ],
+  "adapter_note": "Public source fingerprint differs because portable helpers and release identity are included; new reproduced checkpoints receive their own truthful source/matrix fingerprints. Original current-run checkpoint fingerprints are unchanged."
+}

@@ -1,0 +1,108 @@
+{
+  "transform": {
+    "columns": [
+      "original_glszm_SizeZoneNonUniformity",
+      "original_glszm_LargeAreaHighGrayLevelEmphasis"
+    ],
+    "median": [
+      229.98798799801452,
+      15727662.865656352
+    ],
+    "mean": [
+      563.2166348488266,
+      130399511.39975153
+    ],
+    "sd": [
+      903.3029315506317,
+      754933266.2016827
+    ],
+    "keep": [
+      true,
+      true
+    ]
+  },
+  "kind": "top_two_cox",
+  "penalty": 1.0,
+  "features": [
+    "original_glszm_SizeZoneNonUniformity",
+    "original_glszm_LargeAreaHighGrayLevelEmphasis"
+  ],
+  "coefficients": [
+    0.18199838149310318,
+    0.16712430567723016
+  ],
+  "tuning": [
+    {
+      "kind": "ridge",
+      "penalty": 0.1,
+      "C_index": 0.5709443099273608,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "ridge",
+      "penalty": 1.0,
+      "C_index": 0.5806295399515738,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "ridge",
+      "penalty": 10.0,
+      "C_index": 0.5869249394673124,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_cox",
+      "penalty": 0.01,
+      "C_index": 0.5777239709443099,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_cox",
+      "penalty": 0.1,
+      "C_index": 0.5777239709443099,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_cox",
+      "penalty": 1.0,
+      "C_index": 0.5777239709443099,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_elastic_net",
+      "penalty": 0.01,
+      "C_index": 0.5302663438256658,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_elastic_net",
+      "penalty": 0.1,
+      "C_index": 0.5786924939467313,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    },
+    {
+      "kind": "top_two_elastic_net",
+      "penalty": 1.0,
+      "C_index": 0.5,
+      "success_folds": 3,
+      "failed_folds": 0,
+      "failure": []
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+feature,beta,mean,SD_population,median_imputation,kind,penalty
+original_glszm_SizeZoneNonUniformity,0.18199838149310318,563.2166348488266,903.3029315506317,229.98798799801452,top_two_cox,1.0
+original_glszm_LargeAreaHighGrayLevelEmphasis,0.16712430567723016,130399511.39975153,754933266.2016827,15727662.865656352,top_two_cox,1.0

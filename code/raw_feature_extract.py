@@ -51,6 +51,9 @@ def build_matrix(a,f,c):
     assert not mat.patient_id.duplicated().any(); assert (mat.os_months>0).all(); assert np.isfinite(mat[fcols]).all().all()
     expected_columns=list(rows(PACKAGE/'code/data/analysis_matrix.csv')[0])
     if set(mat.columns)!=set(expected_columns):raise ValueError('Rebuilt matrix column schema differs')
+    expected_ids=[r['patient_id'] for r in rows(PACKAGE/'code/data/analysis_matrix.csv')]
+    if set(mat.patient_id)!=set(expected_ids):raise ValueError('Rebuilt patient set differs from frozen inputs')
+    mat=mat.set_index('patient_id',drop=False).loc[expected_ids].reset_index(drop=True)
     mat[expected_columns].to_csv(REV/'03_model_development/analysis_matrix.csv',index=False)
 
 def main():

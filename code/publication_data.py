@@ -9,7 +9,7 @@ from lifelines import KaplanMeierFitter
 from openpyxl import Workbook
 from openpyxl.styles import Font,PatternFill,Alignment,Border,Side
 from openpyxl.utils import get_column_letter
-ROOT=Path(os.environ.get('TACE_PROJECT_ROOT',str(Path.cwd())))/'revision_R1_20261014'; OUT=ROOT/'05_figures_and_tables'
+ROOT=Path(os.environ.get('TACE_PROJECT_ROOT','.'))/'revision_R1_20261014'; OUT=ROOT/'05_figures_and_tables'
 
 LABELS={
  'clinical':'Clinical', 'radiomics_only':'Radiomics only',
@@ -52,17 +52,6 @@ def add_sheet(wb,name,title,df,note=None):
     s.freeze_panes='A3'; s.auto_filter.ref=f'A2:{get_column_letter(len(df.columns))}{len(df)+2}'
     if note: s.append([]); s.append([note]); s.merge_cells(start_row=s.max_row,start_column=1,end_row=s.max_row,end_column=max(1,len(df.columns)))
     return s
-
-def read_extraction_settings(root):
-    settings=json.loads((root/'02_extraction/extraction_effective_settings.json').read_text())
-    if 'distribution' not in settings:
-        environment_path=root.parent/'ACTUAL_ENVIRONMENT.json'
-        if not environment_path.is_file():raise RuntimeError('Actual extraction environment is missing; do not invent versions')
-        environment=json.loads(environment_path.read_text())
-        if not environment.get('packages'):raise RuntimeError('Actual dependency versions are missing')
-        settings['distribution']=environment['packages']
-        settings['python']=environment['python']
-    return settings
 
 def main():
     validation=audit_validation(ROOT)
@@ -152,7 +141,7 @@ def main():
       ('S19','Linear, age-spline and limited nonlinear model comparisons',perf[perf.model.str.contains('spline|RSF')]),
       ('S20','Cross-validated monthly-grid IBS and actual follow-up support',ibs_summary)
     ]
-    settings=read_extraction_settings(ROOT)
+    settings=json.loads((ROOT/'02_extraction/extraction_effective_settings.json').read_text())
     for name,title,frame in tables:
         clean=frame.copy()
         for col in clean.select_dtypes(include=['object']).columns:

@@ -31,6 +31,8 @@ def main():
    print(json.dumps({'status':'INPUT_PREFLIGHT_ONLY','model_fits':0,'features_reextracted':False}));return
   if a.source_root:run('raw_feature_extract.py','--workers',a.workers)
   audit=verify_outputs(root,bool(a.source_root));verify_bindings(binding)
+  from public_execution_gate import prepare_execution_gate
+  audit=prepare_execution_gate(root,bool(a.source_root))
   if not a.train:
    print(json.dumps({'status':'INPUTS_VERIFIED_NO_TRAINING','model_fits':0,'features_reextracted':bool(a.source_root)}));return
   for script,args in [('diagnostics_and_tests.py',[]),('validate_pipeline.py',['--mode','point','--workers',a.workers]),('validate_pipeline.py',['--mode','bootstrap','--workers',a.workers])]:
@@ -40,8 +42,10 @@ def main():
   if r.returncode:raise RuntimeError('R survival diagnostics failed')
   assert_inputs_unchanged(root,audit,'reporting');run('publication_data.py')
   if a.source_root:run('publication_figures.py')
-  verify_bindings(binding);assert_inputs_unchanged(root,audit,'completion');write_completion_marker(root,audit)
-  print('COMPLETE: new numerical run with its own fingerprints; original checkpoint identities never rewritten.')
+  verify_bindings(binding);assert_inputs_unchanged(root,audit,'completion');marker=write_completion_marker(root,audit)
+  marker.update(scope='MODEL_VALIDATION_ONLY',analysis_execution_basis='author_specified_inputs',medical_evidence_requirements_satisfied=False,submission_ready=False,secondary_uncertainty_complete=False,publication_materials_complete=False)
+  dump(root/'ANALYSIS_COMPLETE_AWAITING_DOCUMENT_SYNC.json',marker)
+  print('MODEL VALIDATION COMPLETE: new run fingerprints; secondary statistics and document synchronization remain separate. No new physician approval or submission readiness is claimed.')
  except Exception as exc:
   if created and root.exists():dump(root/'EXECUTION_FAILURE.json',{'status':'FAILED','stage':stage,'exception':type(exc).__name__,'message':str(exc),'traceback':traceback.format_exc(),'time':datetime.datetime.now().astimezone().isoformat(),'completion_authorized':False})
   print('FAILED '+stage+': '+str(exc),file=sys.stderr);return 1
