@@ -1,0 +1,13 @@
+{
+  "status": "AUTHORIZED_RELEASE_PREPARATION_NOT_YET_PUBLISHED",
+  "proposed_tag": "v1.1.0",
+  "published_commit": null,
+  "anonymous_access_verified": false,
+  "results_attached": true,
+  "medical_evidence_status": "INCOMPLETE",
+  "submission_ready": false,
+  "publication_authorized": true,
+  "target_repository": "https://github.com/Yangjunwei-GZ/TACE-2004217-R1",
+  "current_main_analysis_verified": true,
+  "secondary_results_attached": true
+}

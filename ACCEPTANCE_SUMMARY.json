@@ -1,169 +1,45 @@
 {
-  "status": "PASS_FOCUSED_INPUT_AND_SOFTWARE_ACCEPTANCE",
-  "completed_at": "2026-10-27T00:00:38.706025+08:00",
-  "scope": "Package input/routes and synthetic fault tests; scientific completion comes separately from actual new checkpoints and secondary outputs",
-  "public_tests": {
-    "status": "PASS",
-    "scope": "Focused public-entry and synthetic fault injection; no scientific training",
-    "tests": 23,
-    "failures": 0,
-    "errors": 0,
-    "records": [
-      {
-        "test": "test_public_inputs.PublicInputTests.test_changed_clinical_count_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_changed_feature_value_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_changed_representative_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_corrupt_final_mask_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_decreased_feature_rows_block_training_gate",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_duplicate_or_extra_ROI_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_input_change_after_preflight_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_legacy_missing_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_legacy_tamper_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_manifest_version_or_hash_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_matrix_entry_from_other_cwd_and_spaces",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_missing_final_mask_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_missing_patient_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_nonfinite_feature_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_recorded_extraction_failure_blocks_training_gate",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_reviewed_legacy_csv_valid",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_rosters_and_17_final_masks",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_synthetic_child_failure_returns_nonzero_without_complete",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_inputs.PublicInputTests.test_wrong_CT_mapping_rejected",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_author_gate.AuthorInputGateTests.test_author_adoption_does_not_certify_physician_evidence",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_author_gate.AuthorInputGateTests.test_author_gate_marker_cannot_claim_medical_completion",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_author_gate.AuthorInputGateTests.test_changed_adoption_record_blocks_low_level_model_entry",
-        "status": "PASS"
-      },
-      {
-        "test": "test_public_author_gate.AuthorInputGateTests.test_eight_original_masks_no_alias_and_clinical_counts_preserved",
-        "status": "PASS"
-      }
-    ],
-    "python": "3.10.11 (tags/v3.10.11:7d4cc5a, Apr  5 2023, 00:38:17) [MSC v.1929 64 bit (AMD64)]",
-    "platform": "Windows-10-10.0.26200-SP0",
-    "model_fits": 0,
-    "completed_at": "2026-10-26T23:59:35.287240+08:00"
-  },
-  "actual_raw_source_preflight": {
+  "status": "PASS_RELATED_TESTS_AND_ACTUAL_INPUT_PREFLIGHTS",
+  "at": "2026-10-27T10:42:48.455419+08:00",
+  "tests": 32,
+  "failures": 0,
+  "errors": 0,
+  "matrix_patients": 120,
+  "matrix_ROIs": 210,
+  "matrix_event_count": 85,
+  "matrix_scope": "physician_decision_relayed_by_author_inputs",
+  "source_preflight": {
     "status": "PASS_RAW_SOURCE_PREFLIGHT_NOT_EXTRACTION",
     "patients": 120,
     "active_ROIs": 210,
     "final_masks_applied": 17,
     "model_fits": 0
   },
-  "cached_feature_matrix_construction": {
-    "status": "PASS_CACHED_FEATURE_MATRIX_CONSTRUCTION_ONLY",
-    "checked_at": "2026-10-26T22:18:26.729151+08:00",
-    "source_resolution": "Actual official-source CT/mask hashes and17 packaged final masks checked",
-    "patients": 120,
-    "active_ROIs": 210,
-    "comparisons": {
-      "matrix": {
-        "rows": 120,
-        "columns": 182,
-        "max_absolute_error": 2.9802322387695312e-08,
-        "max_relative_error": 6.82419642748146e-13,
-        "atol": 1e-08,
-        "rtol": 1e-10,
-        "row_order_and_IDs_identical": true,
-        "ignored_relocated_columns": [
-          "ct_path",
-          "mask_path"
-        ]
-      },
-      "features": {
-        "rows": 210,
-        "columns": 116,
-        "max_absolute_error": 2.9802322387695312e-08,
-        "max_relative_error": 6.82419642748146e-13,
-        "atol": 1e-08,
-        "rtol": 1e-10,
-        "row_order_and_IDs_identical": true,
-        "ignored_relocated_columns": [
-          "ct_path",
-          "mask_path"
-        ]
-      }
+  "model_fits": 0,
+  "new_feature_extractions": 0,
+  "manifest_sha256": "77798dba5d435de12a3a357fd2f8adf6662494e72a929d697ddf72c07e74b1c5",
+  "pin_sha256": "9af75f357e50affd65efbe036bfcbc52534c4761987aca6a4465fc85cfaf3435",
+  "record_scope": "Current v1.1.1 provenance compatibility and real-input preflight; not a new model run",
+  "command_summary": [
+    {
+      "entry": "run_public_acceptance.py",
+      "exit_code": 0,
+      "started_at": "2026-10-27T10:40:51.720715+08:00",
+      "finished_at": "2026-10-27T10:41:45.949206+08:00"
     },
-    "public_execution_gate": "PASS_AUTHOR_SPECIFIED_INPUTS_NOT_PHYSICIAN_APPROVAL",
-    "new_feature_extractions": 0,
-    "model_fits": 0,
-    "old_checkpoints_copied": 0,
-    "distinction": "Feature cache and original masks test matrix aggregation; this is not a fresh107-feature extraction acceptance run",
-    "public_matrix_sha256": "7a691b776cc63a3d8e0695df392778408f93da502b838ec0f074717116adf3cb",
-    "reconstructed_matrix_sha256": "8df51da409a2a9ea026d76770632d0c8d9f18f8560f36a420fe9cf4b63e70c87",
-    "medical_evidence_status": "INCOMPLETE",
-    "submission_ready": false
-  },
-  "fresh_radiomics_reextraction_performed_for_packaging": false,
-  "model_training_performed_for_packaging": false,
-  "current_main_scientific_evidence": "PUBLIC_RUN_EVIDENCE/STATUS.json",
-  "current_secondary_evidence": "secondary_uncertainty/REFERENCE_STATUS.json",
-  "archive_scope": "ZIP/member/hash/fresh-unpack checks are recorded outside the archive to avoid self-reference",
-  "anonymous_public_access_verified": false,
-  "medical_evidence_status": "INCOMPLETE",
-  "submission_ready": false
+    {
+      "entry": "run_revision.py",
+      "exit_code": 0,
+      "started_at": "2026-10-27T10:41:45.951205+08:00",
+      "finished_at": "2026-10-27T10:41:54.339018+08:00"
+    },
+    {
+      "entry": "run_revision.py",
+      "exit_code": 0,
+      "started_at": "2026-10-27T10:41:54.340018+08:00",
+      "finished_at": "2026-10-27T10:42:48.451417+08:00"
+    }
+  ],
+  "prior_acceptance_snapshot": "historical_reference/v1.1.0_pre_correction_metadata/ACCEPTANCE_SUMMARY.json",
+  "remote_publication_status": "Separate live Release evidence; not asserted by local acceptance"
 }

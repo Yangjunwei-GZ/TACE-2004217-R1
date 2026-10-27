@@ -28,12 +28,12 @@ patient_id,eligibility,reason,clinical_count_action,final_phase,source_clinical_
 77,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。修订/替代影像须在提取前通过实际技术核验；失败停止。,retain_source,arterial,1
 79,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。修订/替代影像须在提取前通过实际技术核验；失败停止。,retain_source,arterial,1
 81,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。来源技术证据合格，执行时再次核验实际文件。,retain_source,arterial,1
-83,include,作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。,retain_source,arterial,4
+83,include,The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved.,retain_source,arterial,4
 84,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。修订/替代影像须在提取前通过实际技术核验；失败停止。,retain_source,arterial,1
 85,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。来源技术证据合格，执行时再次核验实际文件。,retain_source,arterial,4
 91,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。来源技术证据合格，执行时再次核验实际文件。,retain_source,arterial,2
 92,exclude,统一纳排规则：全部具体处置已明确，未保留有效canonical动脉期病灶。,retain_source,arterial,1
-94,include,作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。,retain_source,arterial,4
+94,include,The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved.,retain_source,arterial,4
 96,exclude,统一纳排规则：全部具体处置已明确，未保留有效canonical动脉期病灶。,retain_source,arterial,1
 101,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。来源技术证据合格，执行时再次核验实际文件。,retain_source,arterial,2
 102,include,统一纳排规则：最终动脉期、掩膜处置及病灶身份明确。来源技术证据合格，执行时再次核验实际文件。,retain_source,arterial,4

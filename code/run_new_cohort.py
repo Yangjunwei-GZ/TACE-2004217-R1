@@ -13,6 +13,7 @@ import traceback
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from analysis_input_guard import verify_analysis_inputs, assert_inputs_unchanged, verify_model_output
 from survival_evidence import source_fingerprint
+from decision_provenance import decision_provenance, provenance_from_rows
 
 CODE = Path(__file__).resolve().parent
 REQUIRED_ROI_DECISIONS = ['83_1_' + str(i) for i in range(5)] + ['94_1_' + str(i) for i in range(3)]
@@ -53,6 +54,10 @@ def decision_issues(run_root):
                 problems.append(dict(type='missing_final_modified_mask', sample_id=sid, path=mask))
         if action == 'alias' and (not row.get('alias_of') or row['alias_of'] == sid):
             problems.append(dict(type='missing_valid_alias_target', sample_id=sid))
+    try:
+        provenance_from_rows(rows)
+    except ValueError as exc:
+        problems.append(dict(type='invalid_decision_provenance_or_evidence_scope', detail=str(exc)))
     return problems
 
 
@@ -93,10 +98,10 @@ def preflight(run_root, *, verify_image_hashes=True):
     audit.update(execution_source_sha256=source_fingerprint(CODE), checked_utc=utc(),
                  actual_event_count=sum(int(float(r['death_event'])) for r in matrix),
                  scientific_model_runs_started=0,
-                 analysis_execution_basis='author_specified_inputs',
                  medical_evidence_requirements_satisfied=False,
                  submission_ready=False,
-                 medical_evidence_limitation='Author adoption of the eight original masks does not supply new physician boundary adjudication or independent lesion identity for P120L03/L04; unknown actual review metadata remain unknown.')
+                 medical_evidence_limitation='Sourced retention provenance does not itself supply a signed review record, a new independent review, or confirmation of two independent clinical lesions for P120L03/L04; the decision-specific date and blinding remain unprovided.')
+    audit.update(decision_provenance(decision_path(run_root)))
     write_json(run_root / 'MODEL_PREFLIGHT.json', audit)
     return audit
 
@@ -104,16 +109,25 @@ def preflight(run_root, *, verify_image_hashes=True):
 def require_execution_release(run_root, audit):
     marker = Path(run_root) / 'COHORT_READY_FOR_MODELING.json'
     value = read_json(marker) if marker.is_file() else {}
-    # A sourced author adoption decision can freeze a research input. It is not
-    # a substitute for the separately required radiologist medical evidence.
+    # A sourced retention decision can freeze an input. Its decision maker and
+    # communication source are distinct from evidence of a signed independent review.
     if (value.get('status') != 'READY' or value.get('input_decisions_complete') is not True
             or value.get('analysis_matrix_sha256') != audit['analysis_matrix_sha256']
             or value.get('medical_decisions_sha256') != sha(decision_path(run_root))):
         raise RuntimeError('Explicit input-adoption freeze is missing or does not match matrix/decision records')
-    if (value.get('cohort_analysis_scope') != 'author_specified_inputs'
+    provenance = decision_provenance(decision_path(run_root))
+    if (value.get('cohort_analysis_scope') != provenance['cohort_analysis_scope']
             or value.get('medical_evidence_requirements_satisfied') is not False
             or value.get('submission_ready') is not False):
-        raise RuntimeError('Author input adoption must not be labelled as completed physician evidence or submission approval')
+        raise RuntimeError('Retention provenance must not be labelled as complete medical evidence or submission approval')
+    if provenance['physician_retention_decision_relayed']:
+        if (value.get('medical_decisions_complete') is not False
+                or value.get('all_decisions_physician_confirmed') is not False
+                or value.get('medical_evidence_status') != 'INCOMPLETE'):
+            raise RuntimeError('Physician retention relay must not certify comprehensive review evidence')
+        for key, expected in provenance.items():
+            if value.get(key) != expected or audit.get(key) != expected:
+                raise RuntimeError('Frozen physician-decision attribution/evidence scope mismatch: ' + key)
     bound = value.get('bound_files', {})
     for path, digest in audit['bound_files'].items():
         if bound.get(path) != digest:
@@ -188,7 +202,7 @@ def main():
             validation_integrity_sha256=sha(rev / '04_validation/VALIDATION_INTEGRITY.json'),
             model_training_and_validation_complete=True, secondary_uncertainty_complete=False,
             publication_materials_complete=False,
-            analysis_execution_basis='author_specified_inputs',
+            **decision_provenance(decision_path(args.run_root)),
             medical_evidence_requirements_satisfied=False,
             submission_ready=False))
 

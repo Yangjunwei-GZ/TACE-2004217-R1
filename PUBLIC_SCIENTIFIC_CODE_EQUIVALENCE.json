@@ -79,5 +79,7 @@
     "Metadata provenance comparison for fresh extraction",
     "Explicit incomplete medical/secondary/submission status",
     "Corrected report attribution"
-  ]
+  ],
+  "record_scope": "Historical v1.1.0 evidence snapshot; original hashes and checks are retained unchanged.",
+  "current_patch_evidence": "PATCH_VERIFICATION.json"
 }

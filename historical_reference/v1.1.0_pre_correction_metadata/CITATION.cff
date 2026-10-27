@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Author-authorised v1.1.0 release preparation. Cite the fixed release only after actual publication is recorded; source data should be cited separately."
+type: software
+title: "TACE manuscript 2004217 reproducibility code and author-specified derived inputs"
+version: "v1.1.0"
+authors:
+  - family-names: Yang
+    given-names: Junwei
+repository-code: "https://github.com/Yangjunwei-GZ/TACE-2004217-R1"
+license: MIT
+abstract: "Author-specified 120-patient, 85-death, 210-ROI reanalysis inputs and complete reproduction routes. Current-run results are attached only after actual completion. Code licence only: source/derived data and third-party software retain their separate licences."

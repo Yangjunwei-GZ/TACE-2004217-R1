@@ -45,7 +45,7 @@ def main():
     legends={}
     provenance_path=ROOT.parent/'ACTUAL_RUN_PROVENANCE.json'
     provenance=json.loads(provenance_path.read_text()) if provenance_path.is_file() else {}
-    qc_scope=('Previously confirmed physician QC and17-mask work retain their physician attribution. The additional eight original masks were adopted as author-specified research inputs; no new independent physician boundary or L03/L04 clinical-identity evidence is inferred. Unknown review dates, independence and blinding remain unknown.')
+    qc_scope=('Previously confirmed physician QC and17-mask work retain their physician attribution. The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. This attribution correction supplies no new signed or independent review record and no confirmation that L03/L04 are two independent clinical lesions. The physician decision date, decision-specific independence and blinding remain unprovided.')
     source_clinical=pd.read_csv(ROOT/'01_data_audit/source_clinical_233.csv')
     arterial=pairs[pairs.ct_phase==1];candidate_n=arterial.patient_id.nunique();candidate_masks=len(arterial)
     fig,ax=plt.subplots(figsize=(7.09,6.1)); ax.set_xlim(0,1); ax.set_ylim(0,1); ax.axis('off')

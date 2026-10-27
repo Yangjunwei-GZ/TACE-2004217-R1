@@ -11,5 +11,9 @@
   "clinical_lesion_counts_preserved": true,
   "P112_union_and_source_count_unchanged": true,
   "new_input_adoption": "Eight source masks retained, L03/L04 separate segmentation records without alias or independent clinical lesion identity inference",
-  "private_decision_records_included": false
+  "private_decision_records_included": false,
+  "historical_record_scope": "Original v1.1.0 public snapshot; original status, run identity, before/after values and hashes are retained as historical evidence.",
+  "current_attribution_correction_reference": "ATTRIBUTION_CORRECTION_20261027.json",
+  "current_attribution_statement": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author.",
+  "attribution_correction_date": "2026-10-27"
 }

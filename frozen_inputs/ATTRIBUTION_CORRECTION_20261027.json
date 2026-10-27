@@ -1,0 +1,1102 @@
+{
+  "schema_version": 1,
+  "status": "METADATA_ATTRIBUTION_CORRECTED_NO_SCIENTIFIC_CHANGE",
+  "correction_recorded_at": "2026-10-27T10:29:23.820306+08:00",
+  "attribution_correction_date": "2026-10-27",
+  "information_source": "Author clarification supplied on 2026-10-27; not a newly supplied signed physician document",
+  "statement": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author.",
+  "affected_samples": [
+    "83_1_0",
+    "83_1_1",
+    "83_1_2",
+    "83_1_3",
+    "83_1_4",
+    "94_1_0",
+    "94_1_1",
+    "94_1_2"
+  ],
+  "physician_decision_date": "not_provided",
+  "prior_public_version": {
+    "tag": "v1.1.0",
+    "commit": "b9f39ac0f3a72b457b044bd2c5d4e611c694ec26",
+    "source_asset_sha256": "412ddb43397690af0a79692dff2b9d74ca6ec031bbd5a5673b657f4e843601fa"
+  },
+  "evidence_limits": {
+    "new_physician_signature_provided": false,
+    "new_independent_review_evidence_provided": false,
+    "decision_specific_blinding_provided": false,
+    "independent_clinical_lesion_identity_confirmed": false,
+    "clinical_source_counts_unchanged": true
+  },
+  "scientific_scope": {
+    "feature_extraction_performed": false,
+    "model_training_performed": false,
+    "all_existing_computational_CSV_cells_unchanged": true,
+    "all_eight_actions_retain": true,
+    "mask_hashes_unchanged": true,
+    "source_clinical_counts_for_83_and_94": 4
+  },
+  "changed_fields": [
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_0",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_1",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_2",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_3",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "83_1_4",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_0",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_1",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_source",
+      "before": "Sourced author research-input adoption; 2026-10-26",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author."
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_kind",
+      "before": "AUTHOR_RESEARCH_INPUT_ADOPTION",
+      "after": "PHYSICIAN_DECISION_RELAYED_BY_AUTHOR"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_maker_role",
+      "before": "",
+      "after": "physician"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "communication_source_role",
+      "before": "",
+      "after": "author"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "physician_retention_decision_relayed",
+      "before": "",
+      "after": "True"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "physician_decision_date",
+      "before": "",
+      "after": "not_provided"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "author_communication_record_date",
+      "before": "",
+      "after": "2026-10-26"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_date_scope",
+      "before": "",
+      "after": "author_communication_record_not_physician_decision_date"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "attribution_correction_date",
+      "before": "",
+      "after": "2026-10-27"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "physician_signature_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "independent_review_evidence_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_blinding_provided",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "independent_lesion_identity_confirmed",
+      "before": "",
+      "after": "False"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "physician_final_decision_added_scope",
+      "before": "",
+      "after": "legacy_direct_record_flag_not_decision_maker_indicator"
+    },
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "record": "94_1_2",
+      "field": "decision_evidence_scope",
+      "before": "",
+      "after": "Physician retention decision communicated by author; no new direct physician signed record, actual decision date, decision-specific blinding/independence or independent clinical-lesion identity supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_CANDIDATE_DISPOSITION.csv",
+      "record": "83",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_CANDIDATE_DISPOSITION.csv",
+      "record": "94",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_0",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_0",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_0",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_1",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_1",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_1",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_2",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_2",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_2",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_3",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_3",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_3",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_4",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_4",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "83_1_4",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_0",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_0",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_0",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_1",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_1",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_1",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_2",
+      "field": "reason",
+      "before": "作者明确采用原分割作为研究输入；沿用已记录的动脉期更正；本条不新增医师独立病灶判断，不合并或设别名；临床病灶数保留来源。",
+      "after": "The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. The previously recorded arterial-phase correction is unchanged. P120L03/L04 remain separate segmentation records without merging or aliases; no independent clinical-lesion identity is inferred. Source clinical lesion counts are preserved."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_2",
+      "field": "input_decision_authority",
+      "before": "Author research-input adoption, 2026-10-26; prior author-provided physician phase correction",
+      "after": "Physician decision communicated by author; attribution clarified on 2026-10-27; actual physician decision date not provided. Prior physician phase correction remains unchanged."
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "record": "94_1_2",
+      "field": "medical_evidence_status",
+      "before": "New physician boundary/independent lesion-identity evidence not supplied",
+      "after": "Retention decision relayed by author; direct signed record, actual physician decision date, decision-specific blinding/independence and independent clinical-lesion identity evidence not supplied"
+    }
+  ],
+  "file_hash_correspondence": [
+    {
+      "file": "frozen_inputs/AUTHOR_INPUT_ADOPTION.csv",
+      "v1_1_0_sha256": "c38f1c43ee0f7f3c303f466f7e7746e9be31ed538c8f201a63282a9365bec9a8",
+      "v1_1_1_sha256": "ab3f71b9c90bf82a2e37b060e41c7b72122169f54bcb01237fef5f673f9734af",
+      "scope": "Source/authority metadata only; computational fields unchanged"
+    },
+    {
+      "file": "frozen_inputs/FINAL_CANDIDATE_DISPOSITION.csv",
+      "v1_1_0_sha256": "03de63c014dec31765d45142ed371a0b8d0c3fa3a3b0e1440782b5eea77a3470",
+      "v1_1_1_sha256": "c15491af649f4f4b9938ac2b461ec8b34b0c498896a6d99d90eac8d0a22a2aa4",
+      "scope": "Source/authority metadata only; computational fields unchanged"
+    },
+    {
+      "file": "frozen_inputs/FINAL_IMAGE_AND_ALIAS_ROSTER.csv",
+      "v1_1_0_sha256": "88b9a7deff55400516c903dfc41c300a227fd17740162aeb8c13ee72dc6811a7",
+      "v1_1_1_sha256": "cbd1a62f6017910144afa2dd69daf77c80d6e2add217608eefae6f2de348d291",
+      "scope": "Source/authority metadata only; computational fields unchanged"
+    },
+    {
+      "file": "frozen_inputs/COLUMN_SCOPE_NOTES.md",
+      "v1_1_0_sha256": "da2316cc7cb25e0020abb496bc1cab56021d962784fd2fb70b4ca3a6a056bc9f",
+      "v1_1_1_sha256": "f8eceb77b1f8c7586ffa405bb9e9f7b357fb9bc08c337eb66a74294af322a2ff",
+      "scope": "Scope clarification and compatibility documentation"
+    },
+    {
+      "file": "frozen_inputs/FROZEN_INPUT_ORIGIN.json",
+      "v1_1_0_sha256": "3a2694a84f3f8208f3c495d0c335078b3948bacd42ce89c390bcd37011053684",
+      "v1_1_1_sha256": "0393f1179a33c255dcd7f190934ef37ef631bdff78a2d637b4da28290b373968",
+      "scope": "Appended historical/current scope; original keys and hashes unchanged"
+    },
+    {
+      "file": "frozen_inputs/PUBLIC_AUXILIARY_METADATA_PROVENANCE.json",
+      "v1_1_0_sha256": "a38abb6477d702f99eace4025bfc2f282f521c3d5c9f41506117bf2b219b8ec5",
+      "v1_1_1_sha256": "7d1f49b129d481938b1ad954504f5f0fabb55b298c7355dc98ee8fba36cb5792",
+      "scope": "Appended historical/current scope; original keys and hashes unchanged"
+    }
+  ],
+  "historical_hash_policy": "Previous hashes identify the original metadata files; current file hashes identify corrected metadata. Neither is substituted into original scientific checkpoints."
+}

@@ -1,4 +1,4 @@
-"""Public author-input gate tests; zero scientific model fitting."""
+"""Public retention provenance gate tests; zero scientific model fitting."""
 from pathlib import Path
 import json,sys,tempfile,unittest
 CODE=Path(__file__).resolve().parents[1];sys.path.insert(0,str(CODE))
@@ -11,7 +11,7 @@ class AuthorInputGateTests(unittest.TestCase):
     def setUp(self):
         self.tmp=tempfile.TemporaryDirectory(prefix='TACE author gate ');self.addCleanup(self.tmp.cleanup)
         self.root=Path(self.tmp.name)/'new run'
-    def test_author_adoption_does_not_certify_physician_evidence(self):
+    def test_relayed_physician_retention_does_not_certify_complete_review_evidence(self):
         prepare(self.root)
         audit=prepare_execution_gate(self.root,False)
         marker=json.loads((self.root/'COHORT_READY_FOR_MODELING.json').read_text())
@@ -21,7 +21,13 @@ class AuthorInputGateTests(unittest.TestCase):
         self.assertFalse(marker['medical_decisions_complete'])
         self.assertFalse(marker['medical_evidence_requirements_satisfied'])
         self.assertFalse(marker['submission_ready'])
-        self.assertEqual(marker['cohort_analysis_scope'],'author_specified_inputs')
+        self.assertEqual(marker['cohort_analysis_scope'],'physician_decision_relayed_by_author_inputs')
+        self.assertTrue(marker['physician_retention_decision_relayed'])
+        self.assertFalse(marker['physician_signature_provided'])
+        self.assertFalse(marker['independent_review_evidence_provided'])
+        self.assertFalse(marker['decision_blinding_provided'])
+        self.assertFalse(marker['independent_lesion_identity_confirmed'])
+        self.assertEqual(marker['physician_decision_date'],'not_provided')
         self.assertFalse((self.root/'MODEL_ANALYSIS_COMPLETE.json').exists())
     def test_changed_adoption_record_blocks_low_level_model_entry(self):
         prepare(self.root);prepare_execution_gate(self.root,False)
@@ -44,6 +50,18 @@ class AuthorInputGateTests(unittest.TestCase):
         prepare(self.root);prepare_execution_gate(self.root,False)
         p=self.root/'COHORT_READY_FOR_MODELING.json';d=json.loads(p.read_text())
         d['medical_evidence_requirements_satisfied']=True;p.write_text(json.dumps(d))
+        with self.assertRaises(RuntimeError):require_frozen_model_inputs(self.root)
+    def test_relay_marker_cannot_claim_signature_independence_date_or_lesion_identity(self):
+        prepare(self.root);prepare_execution_gate(self.root,False)
+        p=self.root/'COHORT_READY_FOR_MODELING.json';original=json.loads(p.read_text())
+        fields=['physician_signature_provided','independent_review_evidence_provided',
+                'decision_blinding_provided','independent_lesion_identity_confirmed',
+                'medical_decisions_complete','all_decisions_physician_confirmed']
+        for key in fields:
+            with self.subTest(key=key):
+                changed=dict(original);changed[key]=True;p.write_text(json.dumps(changed))
+                with self.assertRaises(RuntimeError):require_frozen_model_inputs(self.root)
+        changed=dict(original);changed['physician_decision_date']='2026-10-26';p.write_text(json.dumps(changed))
         with self.assertRaises(RuntimeError):require_frozen_model_inputs(self.root)
 
 if __name__=='__main__':unittest.main(verbosity=2)

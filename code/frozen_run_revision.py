@@ -43,9 +43,10 @@ def main():
   assert_inputs_unchanged(root,audit,'reporting');run('publication_data.py')
   if a.source_root:run('publication_figures.py')
   verify_bindings(binding);assert_inputs_unchanged(root,audit,'completion');marker=write_completion_marker(root,audit)
-  marker.update(scope='MODEL_VALIDATION_ONLY',analysis_execution_basis='author_specified_inputs',medical_evidence_requirements_satisfied=False,submission_ready=False,secondary_uncertainty_complete=False,publication_materials_complete=False)
+  from decision_provenance import decision_provenance
+  marker.update(scope='MODEL_VALIDATION_ONLY',**decision_provenance(root/'PUBLIC_INPUT_ADOPTION.csv'),medical_evidence_requirements_satisfied=False,submission_ready=False,secondary_uncertainty_complete=False,publication_materials_complete=False)
   dump(root/'ANALYSIS_COMPLETE_AWAITING_DOCUMENT_SYNC.json',marker)
-  print('MODEL VALIDATION COMPLETE: new run fingerprints; secondary statistics and document synchronization remain separate. No new physician approval or submission readiness is claimed.')
+  print('MODEL VALIDATION COMPLETE: new run fingerprints; secondary statistics and document synchronization remain separate. Decision attribution does not certify a signed independent review or submission readiness.')
  except Exception as exc:
   if created and root.exists():dump(root/'EXECUTION_FAILURE.json',{'status':'FAILED','stage':stage,'exception':type(exc).__name__,'message':str(exc),'traceback':traceback.format_exc(),'time':datetime.datetime.now().astimezone().isoformat(),'completion_authorized':False})
   print('FAILED '+stage+': '+str(exc),file=sys.stderr);return 1

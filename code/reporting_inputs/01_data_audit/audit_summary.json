@@ -23,7 +23,7 @@
     "Delayed phase": 1,
     "No valid ROI": 5
   },
-  "independent_radiologist_review": "Previously author-confirmed physician57-item QC/17-mask work retained. Eight additional source-mask research inputs adopted by author; no new independent physician boundary or lesion-identity evidence supplied.",
+  "independent_radiologist_review": "Previously author-confirmed physician57-item QC/17-mask work retained. The eight original masks from P120/P125 were retained without contour changes following a physician decision communicated by the author. This attribution correction does not provide a signed or independent review record, decision-specific date or blinding, or confirmation of two independent clinical lesions for P120L03/L04.",
   "metadata_scope": "Current input-derived counts; no model fitting and no backdated physician certification",
   "metadata_updated_date": "2026-10-26",
   "original_snapshot_sha256": "582d287d186c482aabe1b66d4e40c8d0ae85330782156d0a3bcc70a154cff532",

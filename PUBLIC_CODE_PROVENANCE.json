@@ -82,5 +82,7 @@
       "changes": []
     }
   ],
-  "adapter_note": "Public source fingerprint differs because portable helpers and release identity are included; new reproduced checkpoints receive their own truthful source/matrix fingerprints. Original current-run checkpoint fingerprints are unchanged."
+  "adapter_note": "Public source fingerprint differs because portable helpers and release identity are included; new reproduced checkpoints receive their own truthful source/matrix fingerprints. Original current-run checkpoint fingerprints are unchanged.",
+  "record_scope": "Historical v1.1.0 evidence snapshot; original hashes and checks are retained unchanged.",
+  "current_patch_evidence": "PATCH_VERIFICATION.json"
 }
